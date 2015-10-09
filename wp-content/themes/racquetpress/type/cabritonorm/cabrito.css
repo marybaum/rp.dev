@@ -1,0 +1,203 @@
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2014 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Insigne Design
+ * License URL: http://www.fontspring.com/fflicense/insigne
+ *
+ *
+ */
+
+@font-face {
+    font-family: 'cabritonorm-bold';
+    src: url('CabritoNormBold-webfont.eot');
+    src: url('CabritoNormBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('CabritoNormBold-webfont.woff') format('woff'),
+         url('CabritoNormBold-webfont.ttf') format('truetype'),
+         url('CabritoNormBold-webfont.svg#cabrito_norm_boldnorm_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cabritonorm-demiIt';
+    src: url('CabritoNormDemiItalic-webfont.eot');
+    src: url('CabritoNormDemiItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('CabritoNormDemiItalic-webfont.woff') format('woff'),
+         url('CabritoNormDemiItalic-webfont.ttf') format('truetype'),
+         url('CabritoNormDemiItalic-webfont.svg#cabrito_norm_demi_inormdemiIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cabritonorm-demi';
+    src: url('CabritoNormDemi-webfont.eot');
+    src: url('CabritoNormDemi-webfont.eot?#iefix') format('embedded-opentype'),
+         url('CabritoNormDemi-webfont.woff') format('woff'),
+         url('CabritoNormDemi-webfont.ttf') format('truetype'),
+         url('CabritoNormDemi-webfont.svg#cabrito_norm_deminorm_demi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cabritonorm-xbold';
+    src: url('CabritoNormExBold-webfont.eot');
+    src: url('CabritoNormExBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('CabritoNormExBold-webfont.woff') format('woff'),
+         url('CabritoNormExBold-webfont.ttf') format('truetype'),
+         url('CabritoNormExBold-webfont.svg#cabrito_norm_exboldnormexBd') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cabritonorm-exBdIt';
+    src: url('CabritoNormExBoldItalic-webfont.eot');
+    src: url('CabritoNormExBoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('CabritoNormExBoldItalic-webfont.woff') format('woff'),
+         url('CabritoNormExBoldItalic-webfont.ttf') format('truetype'),
+         url('CabritoNormExBoldItalic-webfont.svg#cabrito_norm_exboldnormexBdIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cabrito_norm-light';
+    src: url('CabritoNormLight-webfont.eot');
+    src: url('CabritoNormLight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('CabritoNormLight-webfont.woff') format('woff'),
+         url('CabritoNormLight-webfont.ttf') format('truetype'),
+         url('CabritoNormLight-webfont.svg#cabrito_norm_lightnorm_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cabrito-normLtIt';
+    src: url('CabritoNormLightItalic-webfont.eot');
+    src: url('CabritoNormLightItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('CabritoNormLightItalic-webfont.woff') format('woff'),
+         url('CabritoNormLightItalic-webfont.ttf') format('truetype'),
+         url('CabritoNormLightItalic-webfont.svg#cabrito_norm_light_itnormLtIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cabritonorm-med';
+    src: url('CabritoNormMedium-webfont.eot');
+    src: url('CabritoNormMedium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('CabritoNormMedium-webfont.woff') format('woff'),
+         url('CabritoNormMedium-webfont.ttf') format('truetype'),
+         url('CabritoNormMedium-webfont.svg#cabrito_norm_mediumnormMd') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cabrito_norm_medium_inormMdIt';
+    src: url('CabritoNormMediumItalic-webfont.eot');
+    src: url('CabritoNormMediumItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('CabritoNormMediumItalic-webfont.woff') format('woff'),
+         url('CabritoNormMediumItalic-webfont.ttf') format('truetype'),
+         url('CabritoNormMediumItalic-webfont.svg#cabrito_norm_medium_inormMdIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cabritonorm';
+    src: url('CabritoNormRegular-webfont.eot');
+    src: url('CabritoNormRegular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('CabritoNormRegular-webfont.woff') format('woff'),
+         url('CabritoNormRegular-webfont.ttf') format('truetype'),
+         url('CabritoNormRegular-webfont.svg#cabrito_norm_regularnormRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cabritonorm-thin';
+    src: url('CabritoNormThin-webfont.eot');
+    src: url('CabritoNormThin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('CabritoNormThin-webfont.woff') format('woff'),
+         url('CabritoNormThin-webfont.ttf') format('truetype'),
+         url('CabritoNormThin-webfont.svg#cabrito_norm_thinnorm_thin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cabritonorm-ThIt';
+    src: url('CabritoNormThinItalic-webfont.eot');
+    src: url('CabritoNormThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('CabritoNormThinItalic-webfont.woff') format('woff'),
+         url('CabritoNormThinItalic-webfont.ttf') format('truetype'),
+         url('CabritoNormThinItalic-webfont.svg#cabrito_norm_thin_itanormThIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cabritonorm-BkIt';
+    src: url('CabritoNormBookItalic-webfont.eot');
+    src: url('CabritoNormBookItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('CabritoNormBookItalic-webfont.woff') format('woff'),
+         url('CabritoNormBookItalic-webfont.ttf') format('truetype'),
+         url('CabritoNormBookItalic-webfont.svg#cabrito_norm_book_itanormBkIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cabritonorm-book';
+    src: url('CabritoNormBook-webfont.eot');
+    src: url('CabritoNormBook-webfont.eot?#iefix') format('embedded-opentype'),
+         url('CabritoNormBook-webfont.woff') format('woff'),
+         url('CabritoNormBook-webfont.ttf') format('truetype'),
+         url('CabritoNormBook-webfont.svg#cabrito_norm_booknorm_book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cabritonorm-BdIt';
+    src: url('CabritoNormBoldItalic-webfont.eot');
+    src: url('CabritoNormBoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('CabritoNormBoldItalic-webfont.woff') format('woff'),
+         url('CabritoNormBoldItalic-webfont.ttf') format('truetype'),
+         url('CabritoNormBoldItalic-webfont.svg#cabrito_norm_bold_itanormBdIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
