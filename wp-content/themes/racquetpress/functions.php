@@ -21,7 +21,7 @@ add_theme_support( 'custom-background' );
 //Center the header logo and menus////////////////////////////////////
 
 //* Remove the default header
-remove_action( 'genesis_header', 'genesis_do_header' );
+/*remove_action( 'genesis_header', 'genesis_do_header' );
 
 
 //* Add Primary Nav in custom header
@@ -48,7 +48,7 @@ add_action( 'genesis_header', 'genesis_do_subnav' );
 remove_action( 'genesis_after_header', 'genesis_do_nav' );
 remove_action( 'genesis_after_header', 'genesis_do_subnav' );
 
-// End centered header logo, navs ///////////////////////////////////////////////
+// End centered header logo, navs ///////////////////////////////////////////////*/
 
 add_theme_support( 'genesis-connect-woocommerce' );
 
