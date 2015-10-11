@@ -68,8 +68,11 @@ function rp_enqueue_scripts() {
 	// type
 	wp_register_style('foundation', get_stylesheet_directory_uri() . '/foundation/css/foundation.css');
 
+	wp_register_style('rp_type' , 'fonts.googleapis.com/css?family=Karma:300,700,500,400|Montez|Catamaran:300,400,600,800,200' , array() );
+
 	wp_enqueue_style('foundation');
 	wp_enqueue_style('dashicons');
+	wp_enqueue_style('rp_type');
 
 	//* jQuery goodness
 
