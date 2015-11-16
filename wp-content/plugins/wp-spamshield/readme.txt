@@ -224,6 +224,16 @@ If you have any further questions, please submit them on the main [WP-SpamShield
 == Changelog ==
 
 
+= 1.9.6.5 =
+*released 11/15/15*
+
+* Updated the anti-spam filters.
+
+= 1.9.6.4 =
+*released 10/30/15*
+
+* Updated the anti-spam filters.
+
 = 1.9.6.3 =
 *released 09/23/15*
 
@@ -829,19 +839,11 @@ If you have any further questions, please submit them on the main [WP-SpamShield
 * Improved some of the filters in the antispam algorithm.
 * Updated the anti-spam filters.
 
-= 1.4.4 =
-*released 07/30/14*
-
-* Improved speed in processing comments and blocking spam. Optimized the order of the filters so the fastest ones fire first, leading to even better speed and lower server load, which in turn improves scalability.
-* Added Serbian Translation (sr_RS). Thank you to Borisa Djuraskovic of Web Hosting Hub for doing the Serbian translation.
-* Improved some of the filters in the antispam algorithm.
-* Updated the anti-spam filters.
-
 = Changelog =
 For a complete list of changes to the plugin, view the [Version History/Changelog](http://www.redsandmarketing.com/plugins/wp-spamshield/version-history/).
 
 == Upgrade Notice ==
-= 1.9.6.3 =
+= 1.9.6.5 =
 * Updated the anti-spam filters. Please see Changelog for details.
 
 == Other Notes ==
