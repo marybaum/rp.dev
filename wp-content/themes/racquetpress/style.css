@@ -1665,7 +1665,7 @@ img#wpstats {
 Header - title, nav structure
 ---------------------------------------------------------------------------------------------------- */
 .site-header {
-  background: #053 url(images/courts-header.jpg) 50% 0 no-repeat;
+  background: #053 url(images/courts-header.jpg) 50% 50% no-repeat;
   background-size: cover;
   display: block;
   height: 45vh;
