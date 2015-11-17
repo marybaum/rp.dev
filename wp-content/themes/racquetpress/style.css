@@ -581,6 +581,35 @@ Structure and Layout
 
 @media all and (max-width: 27em) {
 
+	.content,
+  .content-sidebar-sidebar .content,
+  .content-sidebar-sidebar .content-sidebar-wrap,
+  .footer-widgets-1,
+  .footer-widgets-2,
+  .footer-widgets-3,
+  .sidebar-content-sidebar .content,
+  .sidebar-content-sidebar .content-sidebar-wrap,
+  .sidebar-primary,
+  .sidebar-secondary,
+  .sidebar-sidebar-content .content,
+  .sidebar-sidebar-content .content-sidebar-wrap,
+  .site-inner,
+  .wrap {
+    padding: 0;
+    width: 100%;
+  }
+
+	.archive-description,
+  .author-box,
+  .comment-respond,
+  .entry,
+  .entry-comments,
+  .entry-footer .entry-meta,
+  .sidebar .widget {
+    padding: 0;
+  }
+
+
 	.home-top .textwidget h1 a {
 		font-size: 1em;
 		letter-spacing: -2px;
@@ -594,7 +623,19 @@ Structure and Layout
 }
 
 @media all and (min-width: 27.01em)	{
+	.site-title {
+  margin: 0 auto;
+  text-indent: -9999px;
+  padding: 0;
+  width: 50%;
+}
 
+.site-title a {
+  background: url(images/logo-WATP-fff.svg);
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 }
 
 @media all and (min-width: 40em) {
@@ -643,45 +684,19 @@ Structure and Layout
     padding: 0;
   }
 
-  .site-header .site-title {
-    height: 1.7em;
-    margin: 0.3em auto;
-    text-align: center;
-    text-indent: -9999px;
-    width: 30%;
-  }
-
-  .site-title a	{
-    background-position: 50% 0;
-	background-size: contain;
-	margin: 0 .1em;
-  }
-
-  .site-header .nav-primary,
-  .site-header .nav-secondary {
-    font-size: 85%;
-    float: left;
-    margin: 0;
-    width: 35%;
-  }
-
-  .site-header .nav-primary a,
-	.site-header .nav-secondary a {
-	  border: none;
-	  color: #fff;
-	  display: inline-block;
-	  line-height: .9;
-	  margin: .125em 0 .1em;
+	.site-title {
+	  margin: 0 auto;
+	  text-indent: -9999px;
 	  padding: 0;
+	  width: 50%;
 	}
 
-  .site-header .nav-primary {
-    text-align: right;
-  }
-
-  .site-header .nav-secondary {
-	 text-align: left;
-  }
+	.site-title a {
+	  background: url(images/logo-WATP-fff.svg);
+	  background-position: 50% 0;
+	  background-repeat: no-repeat;
+	  background-size: contain;
+	}
 
   .breadcrumb	{
     margin: 6.25em auto .1em;
@@ -749,38 +764,9 @@ Structure and Layout
 
 @media all and (min-width: 80em) {
 
-  .content,
-  .content-sidebar-sidebar .content,
-  .content-sidebar-sidebar .content-sidebar-wrap,
-  .footer-widgets-1,
-  .footer-widgets-2,
-  .footer-widgets-3,
-  .sidebar-content-sidebar .content,
-  .sidebar-content-sidebar .content-sidebar-wrap,
-  .sidebar-primary,
-  .sidebar-secondary,
-  .sidebar-sidebar-content .content,
-  .sidebar-sidebar-content .content-sidebar-wrap,
-  .site-inner,
-  .wrap {
-    padding: 0;
-    width: 100%;
-  }
-
-	.archive-description,
-  .author-box,
-  .comment-respond,
-  .entry,
-  .entry-comments,
-  .entry-footer .entry-meta,
-  .sidebar .widget {
-    padding: 0;
-  }
 
   .site-header {
-     float: left;
-     height: 3.75em;
-     margin: 0 auto;
+     margin: 0;
      padding: .5em 0 0;
   }
 
@@ -790,31 +776,18 @@ Structure and Layout
 		 max-width: 90vw;
   }
 
-  .site-header .site-title {
-		float: left;
-		height: 2.4em;
-		margin: 0;
-		width: 20%;
-  }
-
-  .site-header .nav-primary,
-  .site-header .nav-secondary {
-	 margin: 1em 0 0;
-	 width: 39%;
-  }
-
-  .site-header .nav-primary li,
-	.site-header .nav-secondary li	{
-		font-size: 71%;
-		line-height: .8;
+	.site-title {
+	  margin: 0 auto;
+	  text-indent: -9999px;
+	  padding: 0;
+	  width: 50%;
 	}
 
-  .site-header .nav-primary {
-	  text-align: right;
-	}
-
-	.site-header .nav-secondary {
-	  text-align: left;
+	.site-title a {
+	  background: url(images/logo-WATP-fff.svg);
+	  background-position: 50% 0;
+	  background-repeat: no-repeat;
+	  background-size: contain;
 	}
 
 	.breadcrumb	{
@@ -1692,7 +1665,7 @@ img#wpstats {
 Header - title, nav structure
 ---------------------------------------------------------------------------------------------------- */
 .site-header {
-  background: #053 url(images/courts-header.jpg) 50% 30% no-repeat;
+  background: #053 url(images/courts-header.jpg) 50% 0 no-repeat;
   background-size: cover;
   display: block;
   height: 45vh;
@@ -1702,46 +1675,23 @@ Header - title, nav structure
 }
 
 .site-title {
+  margin: 0 auto;
   text-indent: -9999px;
   padding: 0;
-  posi
   width: 50%;
 }
 
 .site-title a {
   background: url(images/logo-WATP-fff.svg);
-  background-position: 50% 12%;
+  background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: contain;
-  margin: 0 auto;
-  height: 80%; /*Keeps logo big in the div.*/
+  z-index: 115;
 }
 
-.site-header .nav-primary,
-.site-header .nav-secondary {
-  background: none;
-  color: #fff;
-  float: left;
-  margin: 2em 0 0;
-  width: 40%;
-}
-
-.nav-primary ul,
-.nav-secondary ul{
-	line-height: 1.2;
-}
-
-.nav-primary ul {
-  text-align: right;
-}
-
-.nav-secondary ul {
-  text-align: left;
-}
-
-.site-header .nav-primary li,
-.site-header .nav-secondary li	{
-	display: inline-block;
+.site-header .title-area,
+.site-header .widget-area	{
+	float: none;
 }
 
 .breadcrumb	{

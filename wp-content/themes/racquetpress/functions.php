@@ -67,7 +67,7 @@ function rp_enqueue_scripts() {
 
 	// type
 	wp_register_style('foundation', get_stylesheet_directory_uri() . '/foundation/css/foundation.css');
-	wp_register_style('rp_googtype' , 'fonts.googleapis.com/css?family=Montez' , array() );
+	wp_register_style('rp_googtype' , 'http://fonts.googleapis.com/css?family=Montez' , array() );
 	wp_register_style('rp_arquitecta' , get_stylesheet_directory_uri() , '/type/arquitectaLMBH/arquitecta.css' , array() );
 	wp_register_style('rp_aviano' , get_stylesheet_directory_uri() , '/type/avianosans/avianosans.css' , array()  );
 
