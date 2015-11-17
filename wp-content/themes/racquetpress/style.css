@@ -1,7 +1,7 @@
 /*-----
   Theme Name: RacquetPress
   Author: Mary Baum
-  Author URI: http://github.com/marybaum/
+  Author URI: http://github.com/marybaum
   Version: 0.1.2
 
   Tags: full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
@@ -29,20 +29,11 @@
   - Structure and Layout
     - Home page
     - Site Containers
-    - Column Widths and Positions
-    - Column Classes
-  - Common Classes
-    - WordPress
-    - Genesis
-    - Titles
-  - Widgets
+    - Widgets
     - Featured Content
-  - Plugins
-    - Genesis eNews Extended
-    - Genesis Latest Tweets
-    - Formidable Forms
-    - Jetpack
-  - Site Header
+  	- Column Widths and Positions
+    - Column Classes
+	- Site Header
     - Title Area
     - Widget Area
   - Site Navigation
@@ -56,10 +47,15 @@
   - Sidebars
   - Footer Widgets
   - Site Footer
-  - Media Queries
-    - max-width: 1139px
-    - max-width: 1023px
-    - max-width: 767px
+    - Common Classes
+    - WordPress
+    - Genesis
+    - Titles
+  - Plugins
+    - Genesis eNews Extended
+    - Genesis Latest Tweets
+    - Formidable Forms
+    - Jetpack
 
 */
 
@@ -297,7 +293,7 @@ html  {
 body {
   background-color: #fff;
   color: #333;
-  font-family: 'RufinaALT01 W01 Regular', serif;
+  font-family: 'arquitecta_light', sans-serif;
   font-size: 1.8em;
   line-height: 1.5;
   margin: 0;
@@ -590,7 +586,7 @@ td {
 Structure and Layout
 ---------------------------------------------------------------------------------------------------- */
 
-@media only screen and (max-width: 20em) {
+@media all and (max-width: 27em) {
 
 	.home-top .textwidget h1 a {
 		font-size: 1em;
@@ -604,7 +600,7 @@ Structure and Layout
 
 }
 
-@media only screen and (max-width: 40em) {
+@media all and (min-width: 40em) {
 
   .five-sixths,
   .four-sixths,
@@ -754,7 +750,7 @@ Structure and Layout
 }
 
 
-@media only screen and (max-width: 80em) {
+@media all and (min-width: 80em) {
 
   .content,
   .content-sidebar-sidebar .content,
@@ -2390,7 +2386,7 @@ Site Footer
 }
 
 /*
-Media Queries
+Media Query - Retina
 ---------------------------------------------------------------------------------------------------- */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
