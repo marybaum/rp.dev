@@ -178,7 +178,7 @@ function rp_postimg() {
 }
 
 /*
- * Output gravatar before content on single Posts having Featured image
+ * Output gravatar before content on single Posts with Featured image
  add_action( 'genesis_before_content', 'rp_gravatar' );
  function rp_gravatar() {
 
@@ -198,7 +198,7 @@ function rp_postimg() {
 add_filter('comment_form_defaults', 'sp_comment_form_defaults');
 function sp_comment_form_defaults($defaults) {
 
-	$defaults['title_reply'] = __('Speak.');
+	$defaults['title_reply'] = __('Your serve.');
 	return $defaults;
 
 }
@@ -212,11 +212,38 @@ add_image_size('small', 300, 300, TRUE);
 
 //* Register widgeted areas
 
-genesis_register_sidebar(array('id' => 'home-top', 'name' => __('home-top', 'gyfoundation'), 'description' => __('This is the top section of the homepage.', 'gyfoundation'),
-//'before_title'=> __( '<h2><a>', 'gyfoundation'),
-//'after_title' => __( '</a></h2>', 'gyfoundation'),
-));
-genesis_register_sidebar(array('id' => 'home-bottom-left', 'name' => __('Home - bottom-left', 'gyfoundation'), 'description' => __('This is the bottom-left section of the homepage.', 'gyfoundation'), 'before_title' => __('<h4>', 'gyfoundation'), 'after_title' => __('</h4>', 'gyfoundation'), ));
-genesis_register_sidebar(array('id' => 'home-bottom-middle', 'name' => __('Home - bottom-middle', 'gyfoundation'), 'description' => __('This is the bottom-middle section of the homepage.', 'gyfoundation'), 'before_title' => __('<h4>', 'gyfoundation'), 'after_title' => __('</h4>', 'gyfoundation'), ));
-genesis_register_sidebar(array('id' => 'home-bottom-right', 'name' => __('Home - bottom-right', 'gyfoundation'), 'description' => __('This is the bottom-right section of the homepage.', 'gyfoundation'), 'before_title' => __('<h4>', 'gyfoundation'), 'after_title' => __('</h4>', 'gyfoundation'), ));
-genesis_register_sidebar(array('id' => 'optin-after-entry', 'name' => __('Opt-in After Entry', 'gyfoundation'), 'description' => __('This is the opt-in form after a single entry.', 'gyfoundation'), 'before_title' => __('<h4>', 'gyfoundation'), 'after_title' => __('</h4>', 'gyfoundation'), ));
+genesis_register_sidebar( array(
+ 'id'     => 'home-top',
+ 'name'    => __( 'home-top', 'racquetpress' ),
+ 'description' => __( 'This is the top section of the homepage.', 'racquetpress' ),
+'before_title'=> __( '<h2>', 'racquetpress'),
+'after_title' => __( '</h2>', 'racquetpress'),
+ ) );
+genesis_register_sidebar( array(
+ 'id'     => 'homegrid-1',
+ 'name'    => __( 'Home - homegrid-1', 'racquetpress' ),
+ 'description' => __( 'This is the homegrid-1 section of the homepage.', 'racquetpress' ),
+ 'before_title'=> __( '<h4>', 'racquetpress'),
+ 'after_title' => __( '</h4>', 'racquetpress'),
+) );
+genesis_register_sidebar( array(
+ 'id'     => 'homegrid-2',
+ 'name'    => __( 'Home - homegrid-2', 'racquetpress' ),
+ 'description' => __( 'This is the homegrid-2 section of the homepage.', 'racquetpress' ),
+ 'before_title'=> __( '<h4>', 'racquetpress'),
+ 'after_title' => __( '</h4>', 'racquetpress'),
+) );
+genesis_register_sidebar( array(
+ 'id'     => 'homegrid-3',
+ 'name'    => __( 'Home - homegrid-3', 'racquetpress' ),
+ 'description' => __( 'This is the homegrid-3 section of the homepage.', 'racquetpress' ),
+ 'before_title'=> __( '<h4>', 'racquetpress'),
+ 'after_title' => __( '</h4>', 'racquetpress'),
+) );
+genesis_register_sidebar( array(
+ 'id'     => 'optin-after-entry',
+ 'name'    => __( 'Opt-in After Entry', 'racquetpress' ),
+ 'description' => __( 'This is the opt-in form after a single entry.', 'racquetpress' ),
+ 'before_title'=> __( '<h4>', 'racquetpress'),
+ 'after_title' => __( '</h4>', 'racquetpress'),
+) );
