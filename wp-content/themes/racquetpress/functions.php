@@ -4,7 +4,7 @@ include_once (get_template_directory() . '/lib/init.php');
 
 //* Child theme (do not remove)
 define('CHILD_THEME_NAME', __('RacquetPress', 'rp'));
-define('CHILD_THEME_URL', ' http://github.com/marybaum/racquetpress');
+define('CHILD_THEME_URL', 'http://github.com/marybaum/rp.dev');
 define('CHILD_THEME_VERSION', '0.1.3');
 
 //* Add HTML5 markup structure
@@ -31,15 +31,15 @@ function rp_breadcrumb_args($args) {
 	// Genesis 1.5 and later
 	$args['display'] = true;
 	$args['labels']['prefix'] = '';
-	$args['labels']['author'] = __(' ', 'gyf');
-	$args['labels']['category'] = __(' ', 'gyf');
+	$args['labels']['author'] = __(' ', 'rp');
+	$args['labels']['category'] = __(' ', 'rp');
 	// Genesis 1.6 and later
-	$args['labels']['tag'] = __(' ', 'gyf');
-	$args['labels']['date'] = __(' ', 'gyf');
-	$args['labels']['search'] = __('Search for ', 'gyf');
-	$args['labels']['tax'] = __(' ', 'gyf');
-	$args['labels']['post_type'] = __(' ', 'gyf');
-	$args['labels']['404'] = __('404', 'gyf');
+	$args['labels']['tag'] = __(' ', 'rp');
+	$args['labels']['date'] = __(' ', 'rp');
+	$args['labels']['search'] = __('Search for ', 'rp');
+	$args['labels']['tax'] = __(' ', 'rp');
+	$args['labels']['post_type'] = __(' ', 'rp');
+	$args['labels']['404'] = __('404', 'rp');
 	// Genesis 1.5 and later
 	return $args;
 }
@@ -59,34 +59,34 @@ add_action('wp_enqueue_scripts', 'rp_enqueue_scripts');
 function rp_enqueue_scripts() {
 
 	// Foundation JS
-	wp_enqueue_script('rp-js', get_template_directory_uri() . '/foundation/js/foundation.min.js', array('jquery'), '1', true);
-	wp_enqueue_script('foundation-modernizr-js', get_template_directory_uri() . '/foundation/js/vendor/modernizr.js', array('jquery'), '1', true);
+	wp_enqueue_script('rp-js', get_stylesheet_directory_uri() . '/foundation/js/foundation.min.js', array('jquery'), '1', true);
+	wp_enqueue_script('foundation-modernizr-js', get_stylesheet_directory_uri() . '/foundation/js/vendor/modernizr.js', array('jquery'), '1', true);
 
 	//Foundation Init JS
-	wp_enqueue_script('foundation-init-js', get_template_directory_uri() . '/foundation/js/foundation.js', array('jquery'), '1', true);
+	wp_enqueue_script('foundation-init-js', get_stylesheet_directory_uri() . '/foundation/js/foundation.js', array('jquery'), '1', true);
 
 	// type
 	wp_register_style('foundation', get_stylesheet_directory_uri() . '/foundation/css/foundation.css');
 
-	wp_register_style('rp_type' , 'fonts.googleapis.com/css?family=Karma:300,700,500,400|Montez|Catamaran:300,400,600,800,200' , array() );
+	wp_register_style('rp_googtype' , 'fonts.googleapis.com/css?family=Montez' , array() );
 
 	wp_enqueue_style('foundation');
 	wp_enqueue_style('dashicons');
-	wp_enqueue_style('rp_type');
+	wp_enqueue_style('rp_googtype');
 
 	//* jQuery goodness
 
-	//  wp_enqueue_script( 'header-fade', get_template_directory_uri() . '/js/header-fade.js', array( 'jquery' ), '1.0.0', true );
+	//  wp_enqueue_script( 'header-fade', get_stylesheet_directory_uri() . '/js/header-fade.js', array( 'jquery' ), '1.0.0', true );
 
-	wp_enqueue_script('rp-effects', get_template_directory_uri() . '/js/effects.js', array('jquery'), '1.0.0');
+	//wp_enqueue_script('rp-effects', get_stylesheet_directory_uri() . '/js/effects.js', array('jquery'), '1.0.0');
 
 	// Backstretch.
 
 	if (is_singular('post') && has_post_thumbnail()) {
 
-		wp_enqueue_script('rp-backstretch', get_bloginfo('stylesheet_directory') . '/js/backstretch.js', array('jquery'), '1.0.0', true);
+		wp_enqueue_script('rp-backstretch', get_stylesheet_directory_uri() . '/js/backstretch.js', array('jquery'), '1.0.0', true);
 
-		wp_enqueue_script('rp-backstretch-set', get_bloginfo('stylesheet_directory') . '/js/backstretch-set.js', array('jquery', 'rp-backstretch'), '1.0.0', true);
+		wp_enqueue_script('rp-backstretch-set', get_stylesheet_directory_uri() . '/js/backstretch-set.js', array('jquery', 'rp-backstretch'), '1.0.0', true);
 
 	}
 }
@@ -143,7 +143,7 @@ function rp_nopic($classes) {
 add_action('genesis_after_header', 'rp_entry_bgd');
 function rp_entry_bgd() {
 	if ((	is_singular('post')) && has_post_thumbnail()) {
-		echo '<div class="entry-background">' . '<h1>' . genesis_do_post_title() . '</h1>' . '</div>';
+		echo '<div class="entrybgd">' . '<h1>' . genesis_do_post_title() . '</h1>' . '</div>';
 	}
 }
 

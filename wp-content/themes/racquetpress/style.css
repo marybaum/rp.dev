@@ -67,7 +67,7 @@
  ---------------------------------------------------------------------------------------------------
 
 
---------------------------------------------------------------------------------------------------- 
+---------------------------------------------------------------------------------------------------
 
 fonts.com type
 -----------------------------------------------------------------------------------------------------
@@ -78,7 +78,7 @@ font-family:'RufinaALT01 W01 Bold';
 font-family:'RufinaALT02 W01 Regular';
 font-family:'Rufina W01 Italic';
 
- 
+
 ----------------------------------------------------------------------------------------------------- */
 
 
@@ -589,6 +589,365 @@ td {
 /*
 Structure and Layout
 ---------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 20em) {
+
+	.home-top .textwidget h1 a {
+		font-size: 1em;
+		letter-spacing: -2px;
+	}
+
+	.home-top .textwidget h3 {
+		font-size: 1em;
+		margin-bottom: -.5em
+	}
+
+}
+
+@media only screen and (max-width: 40em) {
+
+  .five-sixths,
+  .four-sixths,
+  .one-fourth,
+  .one-half,
+  .one-sixth,
+  .one-third,
+  .three-fourths,
+  .three-sixths,
+  .two-fourths,
+  .two-sixths,
+  .two-thirds {
+    margin: 0;
+    width: 100%;
+  }
+
+  .content,
+  .content-sidebar-sidebar .content,
+  .content-sidebar-sidebar .content-sidebar-wrap,
+  .footer-widgets-1,
+  .footer-widgets-2,
+  .footer-widgets-3,
+  .sidebar-content-sidebar .content,
+  .sidebar-content-sidebar .content-sidebar-wrap,
+  .sidebar-primary,
+  .sidebar-secondary,
+  .sidebar-sidebar-content .content,
+  .sidebar-sidebar-content .content-sidebar-wrap,
+  .wrap {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .site-header {
+    float: left;
+    height: 3em;
+    margin: 0 auto;
+  	padding: 0;
+  }
+
+  .site-header .wrap {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .site-header .site-title {
+    height: 1.7em;
+    margin: 0.3em auto;
+    text-align: center;
+    text-indent: -9999px;
+    width: 30%;
+  }
+
+  .site-title a	{
+    background-position: 50% 0;
+	background-size: contain;
+	margin: 0 .1em;
+  }
+
+  .site-header .nav-primary,
+  .site-header .nav-secondary {
+    font-size: 85%;
+    float: left;
+    margin: 0;
+    width: 35%;
+  }
+
+  .site-header .nav-primary a,
+	.site-header .nav-secondary a {
+	  border: none;
+	  color: #fff;
+	  display: inline-block;
+	  line-height: .9;
+	  margin: .125em 0 .1em;
+	  padding: 0;
+	}
+
+  .site-header .nav-primary {
+    text-align: right;
+  }
+
+  .site-header .nav-secondary {
+	 text-align: left;
+  }
+
+  .breadcrumb	{
+    margin: 6.25em auto .1em;
+    max-width: 90%;
+    padding: .5rem 2rem;
+  }
+
+  .site-inner {
+    margin: 0;
+  }
+
+  .home-top.widget-area	{
+		background: url(images/Flint-facade01.jpg) center 50% no-repeat;
+		background-size: cover;
+		min-height: 100vh;
+		margin: 3em 0 0;
+		padding: 1em 0;
+		text-align: center;
+	}
+
+  .home-top .textwidget {
+	padding: 13% 10%;
+  }
+
+  .home-top .textwidget h3 {
+		line-height: 1.2;
+	}
+
+	.home .content {
+		margin: 0;
+		padding: 0;
+	}
+
+	.archive-title {
+      font-size: 2.3em;
+      font-weight: 300;
+      line-height: 0.95;
+      margin: 0 0 .2em;
+	}
+
+	.archive h2.entry-title {
+		margin: 0 0 .3em;
+	}
+
+	input, select, textarea {
+		margin: 1rem auto;
+		padding: 1rem;
+		width: 100%;
+	}
+
+	.single h1.entry-title {
+		font-size: 4em;
+		margin: 2em auto;
+		max-width: 90%;
+	}
+
+	.archive .entry-content,
+	.single .entry-content {
+		-webkit-column-count: 1 !important;
+		-moz-column-count: 1;
+		column-count: 1;
+	}
+}
+
+
+@media only screen and (max-width: 80em) {
+
+  .content,
+  .content-sidebar-sidebar .content,
+  .content-sidebar-sidebar .content-sidebar-wrap,
+  .footer-widgets-1,
+  .footer-widgets-2,
+  .footer-widgets-3,
+  .sidebar-content-sidebar .content,
+  .sidebar-content-sidebar .content-sidebar-wrap,
+  .sidebar-primary,
+  .sidebar-secondary,
+  .sidebar-sidebar-content .content,
+  .sidebar-sidebar-content .content-sidebar-wrap,
+  .site-inner,
+  .wrap {
+    padding: 0;
+    width: 100%;
+  }
+
+	.archive-description,
+  .author-box,
+  .comment-respond,
+  .entry,
+  .entry-comments,
+  .entry-footer .entry-meta,
+  .sidebar .widget {
+    padding: 0;
+  }
+
+  .site-header {
+     float: left;
+     height: 3.75em;
+     margin: 0 auto;
+     padding: .5em 0 0;
+  }
+
+  .site-header .wrap {
+		 margin: 0 auto;
+		 padding: 0;
+		 max-width: 90vw;
+  }
+
+  .site-header .site-title {
+		float: left;
+		height: 2.4em;
+		margin: 0;
+		width: 20%;
+  }
+
+  .site-header .nav-primary,
+  .site-header .nav-secondary {
+	 margin: 1em 0 0;
+	 width: 39%;
+  }
+
+  .site-header .nav-primary li,
+	.site-header .nav-secondary li	{
+		font-size: 71%;
+		line-height: .8;
+	}
+
+  .site-header .nav-primary {
+	  text-align: right;
+	}
+
+	.site-header .nav-secondary {
+	  text-align: left;
+	}
+
+	.breadcrumb	{
+	   margin: 7em auto 0;
+	   max-width: 90%;
+	}
+
+	.archive .breadcrumb {
+	  box-shadow: 1px 1px 1px #9ab;
+	  color: #9ab;
+	  text-shadow: none;
+	}
+
+ 	.site-inner {
+      padding: 0 3%;
+    }
+
+	.archive-title {
+	   margin: 0 0 .1em;
+	}
+
+	.home-top.widget-area	{
+		background: url(images/Flint-facade01.jpg) center 95% no-repeat;
+		background-size: cover;
+		height: 100vh;
+		margin: 3.5em 0 0;
+		text-align: center;
+	}
+
+	.home .entry-content,
+	.home .entry-footer	{
+		display: none;
+	}
+
+	.home-top .textwidget {
+	  background: rgba(0, 0, 0, 0.3);
+	  padding: 15vh 15% 30vh;
+	  text-align: center;
+	  max-width: none;
+	  z-index: 99;
+	}
+
+
+	.home-bottom-left.widget-area h4,
+  .home-bottom-middle.widget-area h4,
+  .home-bottom-right.widget-area h4  {
+    font-size: 2em;
+    line-height: .8;
+    margin: 1.5em 0 0;
+  }
+
+  .home-bottom-left.widget-area img,
+  .home-bottom-middle.widget-area img,
+  .home-bottom-right.widget-area img  {
+    margin: 0;
+  }
+
+	.archive .entry {
+	  height: 100%;
+	  margin: 0 0 1em;
+	  overflow: hidden;
+	}
+
+	.archive .entry-title {
+	  font-size: 4em;
+	  margin: -1.2em 0 0 1rem;
+	}
+
+	.archive h2.entry-title {
+	  margin: 0 0 .3em;
+	}
+
+  .single h1.entry-title  {
+      font-size: 4em;
+      margin: 3em auto 4em;
+      max-width: 90%;
+	}
+
+	.home-top .widget-title,
+	.home-top .entry-title {
+	  font: normal 400 normal 5em/0.95 Raleway, sans-serif;
+	  letter-spacing: -3px;
+	}
+
+  .page-template-single-php h3,
+  .single h3  {
+    font-size: 2.7rem;
+  }
+
+  .single .entry-content  {
+    margin: 2rem 0 0 0;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+     column-count: 2;
+}
+
+  .single entry-content p {
+    margin-bottom: 1.8rem;
+  }
+
+  .entry-footer .entry-meta {
+    margin: 0;
+    padding-top: 12px;
+    padding-top: 1.2rem;
+  }
+
+  .sidebar .widget.enews-widget {
+    padding: 40px;
+    padding: 4rem;
+  }
+
+  .site-footer {
+    padding: 2.4rem 2%;
+  }
+
+  .footer-widgets {
+    padding: 2rem 5% 16px;
+  }
+
+  .footer-widgets-1 {
+    margin: 0;
+  }
+
+}
+
+
 
 /* Site Containers
 --------------------------------------------- */
@@ -1567,7 +1926,7 @@ Content Area
   display: block;
 }
 
-.single .entry-background {
+.single .entrybgd {
   margin: 4em 0 0;
 }
 
@@ -1999,358 +2358,3 @@ Media Queries
 }
 
 
-
-@media only screen and (max-width: 80em) {
-
-  .content,
-  .content-sidebar-sidebar .content,
-  .content-sidebar-sidebar .content-sidebar-wrap,
-  .footer-widgets-1,
-  .footer-widgets-2,
-  .footer-widgets-3,
-  .sidebar-content-sidebar .content,
-  .sidebar-content-sidebar .content-sidebar-wrap,
-  .sidebar-primary,
-  .sidebar-secondary,
-  .sidebar-sidebar-content .content,
-  .sidebar-sidebar-content .content-sidebar-wrap,
-  .site-inner,
-  .wrap {
-    padding: 0;
-    width: 100%;
-  }
-
-	.archive-description,
-  .author-box,
-  .comment-respond,
-  .entry,
-  .entry-comments,
-  .entry-footer .entry-meta,
-  .sidebar .widget {
-    padding: 0;
-  }
-
-  .site-header {
-     float: left;
-     height: 3.75em;
-     margin: 0 auto;
-     padding: .5em 0 0;
-  }
-
-  .site-header .wrap {
-		 margin: 0 auto;
-		 padding: 0;
-		 max-width: 90vw;
-  }
-
-  .site-header .site-title {
-		float: left;
-		height: 2.4em;
-		margin: 0;
-		width: 20%;
-  }
-
-  .site-header .nav-primary,
-  .site-header .nav-secondary {
-	 margin: 1em 0 0;
-	 width: 39%;
-  }
-
-  .site-header .nav-primary li,
-	.site-header .nav-secondary li	{
-		font-size: 71%;
-		line-height: .8;
-	}
-
-  .site-header .nav-primary {
-	  text-align: right;
-	}
-
-	.site-header .nav-secondary {
-	  text-align: left;
-	}
-
-	.breadcrumb	{
-	   margin: 7em auto 0;
-	   max-width: 90%;
-	}
-
-	.archive .breadcrumb {
-	  box-shadow: 1px 1px 1px #9ab;
-	  color: #9ab;
-	  text-shadow: none;
-	}
-
- 	.site-inner {
-      padding: 0 3%;
-    }
-
-	.archive-title {
-	   margin: 0 0 .1em;
-	}
-
-	.home-top.widget-area	{
-		background: url(images/Flint-facade01.jpg) center 95% no-repeat;
-		background-size: cover;
-		height: 100vh;
-		margin: 3.5em 0 0;
-		text-align: center;
-	}
-
-	.home .entry-content,
-	.home .entry-footer	{
-		display: none;
-	}
-
-	.home-top .textwidget {
-	  background: rgba(0, 0, 0, 0.3);
-	  padding: 15vh 15% 30vh;
-	  text-align: center;
-	  max-width: none;
-	  z-index: 99;
-	}
-
-
-	.home-bottom-left.widget-area h4,
-  .home-bottom-middle.widget-area h4,
-  .home-bottom-right.widget-area h4  {
-    font-size: 2em;
-    line-height: .8;
-    margin: 1.5em 0 0;
-  }
-
-  .home-bottom-left.widget-area img,
-  .home-bottom-middle.widget-area img,
-  .home-bottom-right.widget-area img  {
-    margin: 0;
-  }
-
-	.archive .entry {
-	  height: 100%;
-	  margin: 0 0 1em;
-	  overflow: hidden;
-	}
-
-	.archive .entry-title {
-	  font-size: 4em;
-	  margin: -1.2em 0 0 1rem;
-	}
-
-	.archive h2.entry-title {
-	  margin: 0 0 .3em;
-	}
-
-  .single h1.entry-title  {
-      font-size: 4em;
-      margin: 3em auto 4em;
-      max-width: 90%;
-	}
-
-	.home-top .widget-title,
-	.home-top .entry-title {
-	  font: normal 400 normal 5em/0.95 Raleway, sans-serif;
-	  letter-spacing: -3px;
-	}
-
-  .page-template-single-php h3,
-  .single h3  {
-    font-size: 2.7rem;
-  }
-
-  .single .entry-content  {
-    margin: 2rem 0 0 0;
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-     column-count: 2;
-}
-
-  .single entry-content p {
-    margin-bottom: 1.8rem;
-  }
-
-  .entry-footer .entry-meta {
-    margin: 0;
-    padding-top: 12px;
-    padding-top: 1.2rem;
-  }
-
-  .sidebar .widget.enews-widget {
-    padding: 40px;
-    padding: 4rem;
-  }
-
-  .site-footer {
-    padding: 2.4rem 2%;
-  }
-
-  .footer-widgets {
-    padding: 2rem 5% 16px;
-  }
-
-  .footer-widgets-1 {
-    margin: 0;
-  }
-
-}
-
-@media only screen and (max-width: 40em) {
-
-  .five-sixths,
-  .four-sixths,
-  .one-fourth,
-  .one-half,
-  .one-sixth,
-  .one-third,
-  .three-fourths,
-  .three-sixths,
-  .two-fourths,
-  .two-sixths,
-  .two-thirds {
-    margin: 0;
-    width: 100%;
-  }
-
-  .content,
-  .content-sidebar-sidebar .content,
-  .content-sidebar-sidebar .content-sidebar-wrap,
-  .footer-widgets-1,
-  .footer-widgets-2,
-  .footer-widgets-3,
-  .sidebar-content-sidebar .content,
-  .sidebar-content-sidebar .content-sidebar-wrap,
-  .sidebar-primary,
-  .sidebar-secondary,
-  .sidebar-sidebar-content .content,
-  .sidebar-sidebar-content .content-sidebar-wrap,
-  .wrap {
-    padding: 1rem;
-    width: 100%;
-  }
-
-  .site-header {
-    float: left;
-    height: 3em;
-    margin: 0 auto;
-  	padding: 0;
-  }
-
-  .site-header .wrap {
-    max-width: 100%;
-    padding: 0;
-  }
-
-  .site-header .site-title {
-    height: 1.7em;
-    margin: 0.3em auto;
-    text-align: center;
-    text-indent: -9999px;
-    width: 30%;
-  }
-
-  .site-title a	{
-    background-position: 50% 0;
-	background-size: contain;
-	margin: 0 .1em;
-  }
-
-  .site-header .nav-primary,
-  .site-header .nav-secondary {
-    font-size: 85%;
-    float: left;
-    margin: 0;
-    width: 35%;
-  }
-
-  .site-header .nav-primary a,
-	.site-header .nav-secondary a {
-	  border: none;
-	  color: #fff;
-	  display: inline-block;
-	  line-height: .9;
-	  margin: .125em 0 .1em;
-	  padding: 0;
-	}
-
-  .site-header .nav-primary {
-    text-align: right;
-  }
-
-  .site-header .nav-secondary {
-	 text-align: left;
-  }
-
-  .breadcrumb	{
-    margin: 6.25em auto .1em;
-    max-width: 90%;
-    padding: .5rem 2rem;
-  }
-
-  .site-inner {
-    margin: 0;
-  }
-
-  .home-top.widget-area	{
-		background: url(images/Flint-facade01.jpg) center 50% no-repeat;
-		background-size: cover;
-		min-height: 100vh;
-		margin: 3em 0 0;
-		padding: 1em 0;
-		text-align: center;
-	}
-
-  .home-top .textwidget {
-	padding: 13% 10%;
-  }
-
-  .home-top .textwidget h3 {
-		line-height: 1.2;
-	}
-
-	.home .content {
-		margin: 0;
-		padding: 0;
-	}
-
-	.archive-title {
-      font-size: 2.3em;
-      font-weight: 300;
-      line-height: 0.95;
-      margin: 0 0 .2em;
-	}
-
-	.archive h2.entry-title {
-		margin: 0 0 .3em;
-	}
-
-	input, select, textarea {
-		margin: 1rem auto;
-		padding: 1rem;
-		width: 100%;
-	}
-
-	.single h1.entry-title {
-		font-size: 4em;
-		margin: 2em auto;
-		max-width: 90%;
-	}
-
-	.archive .entry-content,
-	.single .entry-content {
-		-webkit-column-count: 1 !important;
-		-moz-column-count: 1;
-		column-count: 1;
-	}
-}
-@media only screen and (max-width: 20em) {
-
-	.home-top .textwidget h1 a {
-		font-size: 1em;
-		letter-spacing: -2px;
-	}
-
-	.home-top .textwidget h3 {
-		font-size: 1em;
-		margin-bottom: -.5em
-	}
-
-}
