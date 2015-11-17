@@ -1691,6 +1691,7 @@ Header - title, nav structure
 
 .site-header .title-area,
 .site-header .widget-area	{
+	display: block;
 	float: none;
 }
 
