@@ -1692,21 +1692,20 @@ img#wpstats {
 Header - title, nav structure
 ---------------------------------------------------------------------------------------------------- */
 .site-header {
-  background: #053 url(images/courts-header.jpg);
+  background: #053 url(images/courts-header.jpg) 50% 30% no-repeat;
+  background-size: cover;
   display: block;
-  height: 5em;
+  height: 45vh;
   text-align: center;
   width: 100%;
   z-index: 99;
 }
 
 .site-title {
-  display: block;
-  height: 4em;
-  text-align: center;
   text-indent: -9999px;
   padding: 0;
-  width: 20%;
+  posi
+  width: 50%;
 }
 
 .site-title a {
@@ -1714,7 +1713,7 @@ Header - title, nav structure
   background-position: 50% 12%;
   background-repeat: no-repeat;
   background-size: contain;
-  display: block;
+  margin: 0 auto;
   height: 80%; /*Keeps logo big in the div.*/
 }
 
