@@ -637,6 +637,7 @@ Structure and Layout
   background-size: contain;
   z-index: 175;
 }
+
 }
 
 @media all and (min-width: 40em) {
