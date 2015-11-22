@@ -1110,13 +1110,11 @@ Structure and Layout
   margin: 0 auto;
 }
 
-.page .site-inner,
-.single .site-inner,
 .home .site-inner,
-.archive .site-container,
 .archive .site-inner {
-  background: #fff;
+  background: #144;
   clear: both;
+  max-width: none;
 }
 
 /* Content */
@@ -2330,22 +2328,6 @@ Site Footer
 
 .home .site-footer a	{
 	color: #ef6;
-}
-
-/*
-Media Query - Retina
----------------------------------------------------------------------------------------------------- */
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-  only screen and (-moz-min-device-pixel-ratio: 1.5),
-  only screen and (-o-min-device-pixel-ratio: 3/2),
-  only screen and (min-device-pixel-ratio: 1.5) {
-
-  .header-image .site-header .wrap {
-    background: url(images/logo@2x.png) no-repeat left;
-    background-size: 320px 164px;
-  }
-
 }
 
 
