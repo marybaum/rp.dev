@@ -24,60 +24,60 @@
 
 
 @font-face {
-    font-family: 'arquitecta_bold';
+    font-family: 'arquitectabold';
     src: url('ArquitectaBold-webfont.eot');
     src: url('ArquitectaBold-webfont.eot?#iefix') format('embedded-opentype'),
          url('ArquitectaBold-webfont.woff') format('woff'),
          url('ArquitectaBold-webfont.ttf') format('truetype'),
-         url('ArquitectaBold-webfont.svg#arquitecta_bold') format('svg');
+         url('ArquitectaBold-webfont.svg#arquitectabold') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'arquitecta_heavy';
+    font-family: 'arquitectaheavy';
     src: url('ArquitectaHeavy-webfont.eot');
     src: url('ArquitectaHeavy-webfont.eot?#iefix') format('embedded-opentype'),
          url('ArquitectaHeavy-webfont.woff') format('woff'),
          url('ArquitectaHeavy-webfont.ttf') format('truetype'),
-         url('ArquitectaHeavy-webfont.svg#arquitecta_heavyheavy') format('svg');
+         url('ArquitectaHeavy-webfont.svg#arquitectaheavyheavy') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'arquitecta_light';
+    font-family: 'arquitectalight';
     src: url('ArquitectaLight-webfont.eot');
     src: url('ArquitectaLight-webfont.eot?#iefix') format('embedded-opentype'),
          url('ArquitectaLight-webfont.woff') format('woff'),
          url('ArquitectaLight-webfont.ttf') format('truetype'),
-         url('ArquitectaLight-webfont.svg#arquitecta_lightlight') format('svg');
+         url('ArquitectaLight-webfont.svg#arquitectalightlight') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'arquitecta_light_italic';
+    font-family: 'arquitectalight-italic';
     src: url('ArquitectaLight-Italic-webfont.eot');
     src: url('ArquitectaLight-Italic-webfont.eot?#iefix') format('embedded-opentype'),
          url('ArquitectaLight-Italic-webfont.woff') format('woff'),
          url('ArquitectaLight-Italic-webfont.ttf') format('truetype'),
-         url('ArquitectaLight-Italic-webfont.svg#arquitecta_lightlight_italic') format('svg');
+         url('ArquitectaLight-Italic-webfont.svg#arquitectalightlight_italic') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'arquitecta_med';
+    font-family: 'arquitectamed';
     src: url('ArquitectaMedium-webfont.eot');
     src: url('ArquitectaMedium-webfont.eot?#iefix') format('embedded-opentype'),
          url('ArquitectaMedium-webfont.woff') format('woff'),
          url('ArquitectaMedium-webfont.ttf') format('truetype'),
-         url('ArquitectaMedium-webfont.svg#arquitecta_mediummedium') format('svg');
+         url('ArquitectaMedium-webfont.svg#arquitectamediummedium') format('svg');
     font-weight: normal;
     font-style: normal;
 

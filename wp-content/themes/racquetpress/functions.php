@@ -68,8 +68,8 @@ function rp_enqueue_scripts() {
 	// type
 	wp_register_style('foundation', get_stylesheet_directory_uri() . '/foundation/css/foundation.css');
 	wp_register_style('rp_googtype' , 'http://fonts.googleapis.com/css?family=Montez' , array() );
-	wp_register_style('rp_arquitecta' , get_stylesheet_directory_uri() , '/type/arquitectaLMBH/arquitecta.css' , array() );
-	wp_register_style('rp_aviano' , get_stylesheet_directory_uri() , '/type/avianosans/avianosans.css' , array()  );
+	wp_register_style('rp_arquitecta' , get_stylesheet_directory_uri() . '/type/arquitectaLMBH/arquitecta.css' , array() , '2' );
+	wp_register_style('rp_aviano' , get_stylesheet_directory_uri() . '/type/avianosans/avianosans.css' , array() );
 
 	wp_enqueue_style('foundation');
 	wp_enqueue_style('dashicons');
@@ -105,14 +105,14 @@ function rp_set_background_image() {
 
 }
 
-// Modify the Genesis content limit read more link
+// Change the Genesis content-limit read-more link
 
 add_filter('get_the_content_more_link', 'rp_read_more_link');
 function rp_read_more_link() {
 	return '... <a class="more-link" href="' . get_permalink() . '">More.</a>';
 }
 
-// Customize search form input box text
+// Change search-form input box copy
 
 add_filter('genesis_search_text', 'rp_search_text');
 function rp_search_text($text) {
@@ -130,7 +130,7 @@ function rp_featured_img_body_class($classes) {
 	return $classes;
 }
 
-//...and without them.
+//...and without.
 
 add_filter('body_class', 'rp_nopic');
 
@@ -150,7 +150,7 @@ function rp_entry_bgd() {
 	}
 }
 
-//lose the background image on archive pages
+//Lose the background image on archive pages
 
 if (is_page('archive')) {
 
@@ -213,7 +213,7 @@ add_image_size('medium', 750, 0, false);
 add_image_size('square', 600, 600, true);
 add_image_size('small', 300, 300, TRUE);
 
-//* Register widgeted areas
+// Register widgeted areas
 
 genesis_register_sidebar( array(
  'id'     => 'home-top',
