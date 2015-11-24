@@ -481,7 +481,7 @@ header.site-header {
 }
 
 h2.site-description	{
-	text-indent: -999px;
+	text-indent: -99999px;
 }
 
 .site-header .title-area,
