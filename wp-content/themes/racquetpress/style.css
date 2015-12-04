@@ -349,7 +349,7 @@ a p {
 }
 
 a:hover {
-  color: #58d;
+  color: #465;
 }
 
 p {
@@ -469,8 +469,7 @@ header.site-header {
   background: #344 url(images/courts-header.jpg) 50% 50% no-repeat;
   background-size: cover;
   display: block;
-  height: 45vh;
-  text-align: center;
+  height: 47vh;
   width: 100%;
   z-index: 99;
 }
@@ -481,9 +480,10 @@ header.site-header {
 }
 
 .site-title {
-  background: url(images/logo-WATP-fff.svg) 50% 0 no-repeat;
+  background: url(images/logo-WATP-fff.svg) 50% bottom no-repeat;
   background-size: contain;
-  margin: .7em auto 0;
+  height: 1.1em;
+  margin: .2em 0;
   text-indent: -9999px;
   padding: 0;
 }
@@ -496,18 +496,21 @@ h2.site-description	{
   text-indent: -99999px;
 }
 
-.site-header .widget-area	{
-  margin: 0 auto;
-  width: 95%;
+.widget-area.header-widget-area	{
+  margin: 0 7% 0 11%;
+  width: 80%;
+}
+
+.site-header .textwidget	{
+	margin: 0 0 0 .25em;
 }
 
 .site-header .textwidget p	{
 	color: #fff;
 	font-family: 'arquitectamed', sans-serif;
-	line-height: 1.2;
+	line-height: 1;
 	text-align: left;
 }
-
 
 .site-header nav a	{
   background: #465;
@@ -2235,16 +2238,12 @@ Site Footer
 }
 
 .site-footer a	{
-	color: #acf;
+	color: #aca;
 }
 
 .home .site-footer	{
 	background: #344;
 	color: #fff;
-}
-
-.home .site-footer a	{
-	color: #ef6;
 }
 
 /* Objects
