@@ -256,6 +256,8 @@ class Ai1wm_Main_Controller {
 		// Public
 		add_action( 'wp_ajax_nopriv_ai1wm_export', 'Ai1wm_Export_Controller::export' );
 		add_action( 'wp_ajax_nopriv_ai1wm_import', 'Ai1wm_Import_Controller::import' );
+		add_action( 'wp_ajax_nopriv_ai1wm_resolve', 'Ai1wm_Resolve_Controller::resolve' );
+
 
 		// Private
 		if ( ! current_user_can( 'export' ) || ! current_user_can( 'import' ) ) {
@@ -270,6 +272,8 @@ class Ai1wm_Main_Controller {
 		add_action( 'wp_ajax_ai1wm_close_message', 'Ai1wm_Message_Controller::close_message' );
 		add_action( 'wp_ajax_ai1wm_backup_delete', 'Ai1wm_Backup_Controller::delete' );
 		add_action( 'wp_ajax_ai1wm_disable_maintenance', 'Ai1wm_Maintenance::disable' );
+		add_action( 'wp_ajax_ai1wm_resolve', 'Ai1wm_Resolve_Controller::resolve' );
+
 	}
 
 	/**

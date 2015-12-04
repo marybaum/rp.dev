@@ -63,17 +63,26 @@
 /* colors
  ---------------------------------------------------------------------------------------------------
 
+Greens:
+#032
+#243
+#344
+#576
+#8a9
+#9c9
+#6a5 - grass green
 
----------------------------------------------------------------------------------------------------
+Limes:
+#cf9
+#df0
+#bd5
 
-fonts.com type
------------------------------------------------------------------------------------------------------
+Blues:
+#58c
+#28d
+#7ad
+#acf
 
-Rufina:
-font-family:'RufinaALT01 W01 Regular';
-font-family:'RufinaALT01 W01 Bold';
-font-family:'RufinaALT02 W01 Regular';
-font-family:'Rufina W01 Italic';
 
 
 ----------------------------------------------------------------------------------------------------- */
@@ -287,7 +296,7 @@ Defaults
 --------------------------------------------- */
 
 html  {
-  font-size: 62.5%;
+  font-size: 137.5%;
   -webkit-appearance: none;
 }
 
@@ -467,13 +476,11 @@ header.site-header {
 }
 
 .site-title {
-  background: url(images/logo-WATP-fff.svg) 0 0 no-repeat;
+  background: url(images/logo-WATP-fff.svg) 50% 0 no-repeat;
   background-size: contain;
-  height: 2em;
-  margin: 1em auto;
+  margin: .7em auto;
   text-indent: -9999px;
   padding: 0;
-  width: 70%;
 }
 
 .site-title a {
@@ -2191,13 +2198,11 @@ Footer Widgets
 Site Footer
 ---------------------------------------------------------------------------------------------------- */
 
-
 .site-footer {
   background-color: #fff;
   color: #344;
-  font-size: 14px;
-  font-size: 1.4rem;
-  padding: 2rem 0;
+  font-size: 0.8em;
+  padding: .5em;
   text-align: center;
 }
 
@@ -2213,7 +2218,6 @@ Site Footer
 .home .site-footer a	{
 	color: #ef6;
 }
-
 
 /* Objects
 --------------------------------------------- */

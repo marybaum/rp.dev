@@ -38,7 +38,7 @@ if ( function_exists( 'gethostname' ) && in_array( gethostname(), $local ) ) {
 // ==================
 // = Plugin Version =
 // ==================
-define( 'AI1WM_VERSION', '4.12' );
+define( 'AI1WM_VERSION', '4.13' );
 
 // ===============
 // = Plugin Name =
@@ -164,6 +164,16 @@ define( 'AI1WM_EXCEPTION_HANDLER', 'ai1wm_exception_handler' );
 // = Maintenance Mode Key =
 // ========================
 define( 'AI1WM_MAINTENANCE_MODE', 'ai1wm_maintenance_mode' );
+
+// ==========
+// = URL IP =
+// ==========
+define( 'AI1WM_URL_IP', 'ai1wm_url_ip' );
+
+// =================
+// = URL Transport =
+// =================
+define( 'AI1WM_URL_TRANSPORT', 'ai1wm_url_transport' );
 
 // ==============
 // = Secret Key =
