@@ -19,6 +19,9 @@ add_theme_support('custom-background');
 //* Add WooCommerce support
 add_theme_support('genesis-connect-woocommerce');
 
+//* Nuke the site description
+remove_action( 'genesis_site_description', 'genesis_seo_site_description' );
+
 //* Reposition the breadcrumbs
 remove_action('genesis_before_loop', 'genesis_do_breadcrumbs');
 add_action('genesis_after_header', 'genesis_do_breadcrumbs');

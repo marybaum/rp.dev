@@ -475,10 +475,15 @@ header.site-header {
   z-index: 99;
 }
 
+.site-header .title-area,
+.site-header .widget-area	{
+	width: 100%;
+}
+
 .site-title {
   background: url(images/logo-WATP-fff.svg) 50% 0 no-repeat;
   background-size: contain;
-  margin: .7em auto;
+  margin: .7em auto 0;
   text-indent: -9999px;
   padding: 0;
 }
@@ -488,13 +493,34 @@ header.site-header {
 }
 
 h2.site-description	{
-	text-indent: -99999px;
+  text-indent: -99999px;
 }
 
-.site-header .title-area,
 .site-header .widget-area	{
-	display: block;
-	float: none;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.site-header .textwidget p	{
+	color: #fff;
+	font-family: 'arquitectamed', sans-serif;
+	line-height: 1.2;
+	text-align: left;
+}
+
+
+.site-header nav a	{
+  background: #465;
+  border: 2px solid;
+  border-radius: 200%;
+  color: #aca;
+  float: left;
+  font-size: .65em;
+  height: 70px;
+  line-height: .9;
+  margin: 1em 1em 0 0;
+  padding: 1.8em 0;
+  width: 70px;
 }
 
 .breadcrumb	{
@@ -548,8 +574,10 @@ Site Navigation
 
 .site-header .nav-primary a,
 .site-header .nav-secondary a {
-  border: none;
-  color: #fff;
+	background: #465;
+  border: 2px solid;
+  border-radius: 200%;
+  color: #9c9;
   display: inline-block;
   line-height: .9;
   margin: .5em .5em 0;
@@ -677,7 +705,7 @@ Site Navigation
 Structure and Layout
 ---------------------------------------------------------------------------------------------------- */
 
-@media all and (max-width: 27em) {
+@media all and (max-width: 26.99em) {
 
 	.content,
   .content-sidebar-sidebar .content,
@@ -1052,7 +1080,7 @@ Structure and Layout
   width: 50%;
 }
 
-@media all and (min-width: 27.1em)	{
+@media all and (min-width: 27em)	{
 
 	.home-top .widget-area	{
 		margin: 0;
