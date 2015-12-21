@@ -23,13 +23,6 @@
   - Defaults
     - Typographical Elements
     - Headings
-  - Structure and Layout
-    - Home page
-    - Site Containers
-    - Widgets
-    - Featured Content
-  	- Column Widths and Positions
-    - Column Classes
 	- Site Header
     - Title Area
     - Widget Area
@@ -37,21 +30,27 @@
     - Header Navigation
     - Primary Navigation
     - Secondary Navigation
+  - Structure and Layout
+    - Home page
+    - Site Containers
+    - Widgets
+    - Featured Content
+  	- Column Widths and Positions
+    - Column Classes
   - Content Area
+    - Titles
     - Entries
     - Pagination
     - Comments
-  - Sidebars
-  - Footer Widgets
-  - Site Footer
+	  - Sidebars
+	  - Footer Widgets
+	  - Site Footer
   - Objects
-  - Forms
-  - Tables
-
-    - Common Classes
+	  - Forms
+  	- Tables
+	- Common Classes
     - WordPress
     - Genesis
-    - Titles
   - Plugins
     - Genesis eNews Extended
     - Genesis Latest Tweets
@@ -463,10 +462,11 @@ h6 {
 }
 
 /*
-Header - title, nav structure
+Site Header - title, nav structure
 ---------------------------------------------------------------------------------------------------- */
 header.site-header {
-  background: #344 url(images/courts-header.jpg) 50% 50% no-repeat;
+  background: #ccc url(images/courts-header.jpg) 50% 30% no-repeat;
+  background-blend-mode: multiply;
   background-size: cover;
   display: block;
   height: 47vh;
@@ -483,7 +483,7 @@ header.site-header {
   background: url(images/logo-WATP-fff.svg) 50% bottom no-repeat;
   background-size: contain;
   height: 1.1em;
-  margin: .2em 0;
+  margin: .5em auto 0;
   text-indent: -9999px;
   padding: 0;
 }
@@ -496,34 +496,37 @@ h2.site-description	{
   text-indent: -99999px;
 }
 
-.widget-area.header-widget-area	{
-  margin: 0 7% 0 11%;
-  width: 80%;
-}
-
-.site-header .textwidget	{
-	margin: 0 0 0 .25em;
+.site-header .widget-area	{
+  padding: .5em 11%;
+  text-align: center;
+  width: 100%;
 }
 
 .site-header .textwidget p	{
 	color: #fff;
 	font-family: 'arquitectamed', sans-serif;
 	line-height: 1;
-	text-align: left;
 }
 
-.site-header nav a	{
+.site-header ul .genesis-nav-menu	{
+	background: #344;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.site-header nav li a	{
   background: #465;
   border: 2px solid;
   border-radius: 200%;
   color: #aca;
   float: left;
-  font-size: .65em;
-  height: 70px;
+  font-size: .8rem;
+  height: 3.4rem;
   line-height: .9;
-  margin: 1em 1em 0 0;
-  padding: 1.8em 0;
-  width: 70px;
+  margin: .5em;
+  padding: 1.2rem 0;
+  width: 3.4rem;
 }
 
 .breadcrumb	{
@@ -535,7 +538,6 @@ h2.site-description	{
 .site-inner {
   padding: 0 3%;
 }
-
 
 /*
 Shrinks
@@ -573,7 +575,7 @@ Shrinks
 
 /*
 Site Navigation
----------------------------------------------------------------------------------------------------- */
+------------------------------------------------------------------ */
 
 .site-header .nav-primary a,
 .site-header .nav-secondary a {
