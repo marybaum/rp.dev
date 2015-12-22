@@ -483,7 +483,7 @@ header.site-header {
   background: url(images/logo-WATP-fff.svg) 50% bottom no-repeat;
   background-size: contain;
   height: 1.1em;
-  margin: .5em auto 0;
+  margin: .9em auto 0;
   text-indent: -9999px;
   padding: 0;
 }
@@ -497,9 +497,14 @@ h2.site-description	{
 }
 
 .site-header .widget-area	{
-  padding: .5em 11%;
+  max-width: none;
+  padding: 0.25em 5% 1em;
   text-align: center;
-  width: 100%;
+  width: 80%;
+}
+
+.site-header .textwidget	{
+	margin: 0 0 1em;
 }
 
 .site-header .textwidget p	{
@@ -511,7 +516,7 @@ h2.site-description	{
 .site-header ul .genesis-nav-menu	{
 	background: #344;
 	display: block;
-	margin: 0 auto;
+	margin: 1em auto;
 	text-align: center;
 }
 
@@ -524,16 +529,11 @@ h2.site-description	{
   font-size: .8rem;
   height: 3.4rem;
   line-height: .9;
-  margin: .5em;
+  margin: 0.9em;
   padding: 1.2rem 0;
   width: 3.4rem;
 }
 
-.breadcrumb	{
-  margin: 6.25em auto .5em;
-  max-width: 90%;
-  padding: .5rem 2rem;
-}
 
 .site-inner {
   padding: 0 3%;
