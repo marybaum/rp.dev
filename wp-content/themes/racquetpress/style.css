@@ -476,6 +476,7 @@ header.site-header {
 
 .site-header .title-area,
 .site-header .widget-area	{
+	padding: 1em 11% 0;
 	width: 100%;
 }
 
@@ -500,7 +501,6 @@ h2.site-description	{
   max-width: none;
   padding: 0.25em 5% 1em;
   text-align: center;
-  width: 80%;
 }
 
 .site-header .textwidget	{
@@ -513,7 +513,7 @@ h2.site-description	{
 	line-height: 1;
 }
 
-.site-header ul .genesis-nav-menu	{
+.site-header ul.genesis-nav-menu	{
 	background: #344;
 	display: block;
 	margin: 1em auto;
