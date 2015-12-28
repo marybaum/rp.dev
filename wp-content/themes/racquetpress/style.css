@@ -469,7 +469,7 @@ header.site-header {
   background-blend-mode: multiply;
   background-size: cover;
   display: block;
-  height: 47vh;
+  height: 29vh;
   width: 100%;
   z-index: 99;
 }
@@ -483,7 +483,7 @@ header.site-header {
 .site-title {
   background: url(images/logo-WATP-fff.svg) 50% bottom no-repeat;
   background-size: contain;
-  height: 1.1em;
+  height: 2em;
   margin: .9em auto 0;
   text-indent: -9999px;
   padding: 0;
@@ -497,10 +497,14 @@ h2.site-description	{
   text-indent: -99999px;
 }
 
-.site-header .widget-area	{
+.site-header .widget-area .widget	{
   max-width: none;
-  padding: 0.25em 5% 1em;
+  padding: 0.25em 15% 0;
   text-align: center;
+}
+
+.header-widget-area section#nav_menu-2	{
+  height: 1.6em;
 }
 
 .site-header .textwidget	{
@@ -510,6 +514,7 @@ h2.site-description	{
 .site-header .textwidget p	{
 	color: #fff;
 	font-family: 'arquitectamed', sans-serif;
+	font-size: 140%;
 	line-height: 1;
 }
 
@@ -807,7 +812,7 @@ Structure and Layout
 
   .site-header {
     background: url(images/courts-header.jpg)
-    float: left;
+    height: 36vh;
     margin: 0;
   	padding: 0;
   }
@@ -819,6 +824,7 @@ Structure and Layout
 
 	.site-title {
 	  margin: 0 auto;
+	  height: 1.4em;
 	  text-indent: -9999px;
 	  padding: 0;
 	  width: 50%;
@@ -831,11 +837,10 @@ Structure and Layout
 	  background-size: contain;
 	}
 
-  .breadcrumb	{
-    margin: 6.25em auto .1em;
-    max-width: 90%;
-    padding: .5rem 2rem;
-  }
+	.site-header .widget-area .widget  {
+		padding: 0 3%;
+		width: 100%;
+	}
 
   .site-inner {
     margin: 0;
