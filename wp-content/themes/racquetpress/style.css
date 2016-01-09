@@ -469,22 +469,19 @@ header.site-header {
   background-blend-mode: multiply;
   background-size: cover;
   display: block;
-  height: 29vh;
   width: 100%;
   z-index: 99;
 }
 
 .site-header .title-area,
 .site-header .widget-area	{
-	padding: 1em 11% 0;
+	padding: 1em 0 0;
 	width: 100%;
 }
 
 .site-title {
   background: url(images/logo-WATP-fff.svg) 50% bottom no-repeat;
   background-size: contain;
-  height: 2em;
-  margin: .9em auto 0;
   text-indent: -9999px;
   padding: 0;
 }
@@ -497,31 +494,15 @@ h2.site-description	{
   text-indent: -99999px;
 }
 
-.site-header .widget-area .widget	{
-  max-width: none;
-  padding: 0.25em 15% 0;
-  text-align: center;
-}
-
-.header-widget-area section#nav_menu-2	{
-  height: 1.6em;
-}
-
-.site-header .textwidget	{
-	margin: 0 0 1em;
-}
-
 .site-header .textwidget p	{
 	color: #fff;
-	font-family: 'arquitectamed', sans-serif;
-	font-size: 140%;
+	font-family: 'arquitecta', sans-serif;
 	line-height: 1;
 }
 
 .site-header ul.genesis-nav-menu	{
 	background: #344;
 	display: block;
-	margin: 1em auto;
 	text-align: center;
 }
 
@@ -530,13 +511,6 @@ h2.site-description	{
   border: 2px solid;
   border-radius: 200%;
   color: #aca;
-  float: left;
-  font-size: .8rem;
-  height: 3.4rem;
-  line-height: .9;
-  margin: 0.9em;
-  padding: 1.2rem 0;
-  width: 3.4rem;
 }
 
 
@@ -717,6 +691,13 @@ Structure and Layout
 
 @media all and (max-width: 26.99em) {
 
+	footer,
+  header,
+  hgroup,
+  main,
+  summary,
+  .site-header,
+  .site-title,
 	.content,
   .content-sidebar-sidebar .content,
   .content-sidebar-sidebar .content-sidebar-wrap,
@@ -731,7 +712,7 @@ Structure and Layout
   .sidebar-sidebar-content .content-sidebar-wrap,
   .site-inner,
   .wrap {
-    padding: 0;
+    padding: 0 5%;
     width: 100%;
   }
 
@@ -745,6 +726,59 @@ Structure and Layout
     padding: 0;
   }
 
+  header.site-header	{
+  	height: 45vh;
+  }
+
+  .site-title {
+	  background: url(images/logo-WATP-fff.svg) 50% bottom no-repeat;
+	  background-size: contain;
+	  height: 1.5em;
+	  margin: 0 auto;
+	  text-indent: -9999px;
+	  padding: 0;
+	}
+
+	.site-header .widget-area .widget	{
+	  max-width: none;
+	  padding: 0.25em 0 0;
+	  text-align: left;
+	}
+
+	.header-widget-area section#nav_menu-2	{
+	  height: 1.6em;
+	}
+
+	.site-header .textwidget	{
+		margin: 0 0 1em;
+	}
+
+	.site-header .textwidget p	{
+		color: #fff;
+		font-size: 100%;
+		line-height: 1;
+	}
+
+	.site-header ul.genesis-nav-menu	{
+		background: #344;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.site-header nav li a	{
+	  background: #465;
+	  border: 2px solid;
+	  border-radius: 200%;
+	  color: #aca;
+	  float: left;
+	  font-size: .8rem;
+	  height: 3.4rem;
+	  line-height: .9;
+	  margin: 0.5em 1.5em .5em 0;
+	  padding: 1.2rem 0;
+	  width: 3.4rem;
+	}
 
 	.home-top .textwidget h1 a {
 		font-size: 1em;
