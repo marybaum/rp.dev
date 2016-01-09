@@ -468,8 +468,8 @@ header.site-header {
   background: #ccc url(images/courts-header.jpg) 50% 30% no-repeat;
   background-blend-mode: multiply;
   background-size: cover;
-  display: block;
-  width: 100%;
+
+width: 100%;
   z-index: 99;
 }
 
@@ -496,14 +496,12 @@ h2.site-description	{
 
 .site-header .textwidget p	{
 	color: #fff;
-	font-family: 'arquitecta', sans-serif;
+	font-family: 'arquitectalight', sans-serif;
 	line-height: 1;
 }
 
-.site-header ul.genesis-nav-menu	{
+.site-header nav ul		{
 	background: #344;
-	display: block;
-	text-align: center;
 }
 
 .site-header nav li a	{
@@ -511,6 +509,11 @@ h2.site-description	{
   border: 2px solid;
   border-radius: 200%;
   color: #aca;
+  font-size: .8rem;
+	height: 3.4rem;
+	padding: 1rem 0;
+	text-align: center;
+	width: 3.4rem;
 }
 
 
@@ -554,14 +557,14 @@ Shrinks
 
 /*
 Site Navigation
------------------------------------------------------------------- */
+------------------------------------------------------------------
 
 .site-header .nav-primary a,
 .site-header .nav-secondary a {
 	background: #465;
   border: 2px solid;
   border-radius: 200%;
-  color: #9c9;
+  color: #aca;
   display: inline-block;
   line-height: .9;
   margin: .5em .5em 0;
@@ -658,7 +661,7 @@ Site Navigation
 }
 
 /* Site Header Navigation
---------------------------------------------- */
+---------------------------------------------
 
 .site-header .sub-menu {
   border: 0;
@@ -669,7 +672,7 @@ Site Navigation
 }
 
 /* Primary Navigation
---------------------------------------------- */
+---------------------------------------------
 
 .nav-primary {
   background: none;
@@ -689,7 +692,7 @@ Site Navigation
 Structure and Layout
 ---------------------------------------------------------------------------------------------------- */
 
-@media all and (max-width: 26.99em) {
+@media all and (min-width: 0) {
 
 	footer,
   header,
@@ -730,7 +733,7 @@ Structure and Layout
   	height: 45vh;
   }
 
-  .site-title {
+  .site-title a	{
 	  background: url(images/logo-WATP-fff.svg) 50% bottom no-repeat;
 	  background-size: contain;
 	  height: 1.5em;
@@ -739,14 +742,14 @@ Structure and Layout
 	  padding: 0;
 	}
 
-	.site-header .widget-area .widget	{
+	.site-header .widget-area	{
 	  max-width: none;
 	  padding: 0.25em 0 0;
 	  text-align: left;
 	}
 
 	.header-widget-area section#nav_menu-2	{
-	  height: 1.6em;
+	  height: 8.6em;
 	}
 
 	.site-header .textwidget	{
@@ -759,9 +762,7 @@ Structure and Layout
 		line-height: 1;
 	}
 
-	.site-header ul.genesis-nav-menu	{
-		background: #344;
-		display: block;
+	.site-header nav ul	{
 		margin: 0 auto;
 		text-align: center;
 	}
@@ -792,21 +793,36 @@ Structure and Layout
 
 }
 
-@media all and (min-width: 27.01em)	{
-	.site-title {
-  margin: 0 auto;
-  text-indent: -9999px;
-  padding: 0;
-  width: 50%;
-}
+@media all and (min-width: 27em)	{
 
-.site-title a {
-  background: url(images/logo-WATP-fff.svg);
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-  background-size: contain;
-  z-index: 175;
-}
+
+	header.site-header	{
+		height: 27vh;
+	}
+
+	.site-title {
+	  margin: 0 auto;
+	  height: 1.5em;
+	  text-indent: -9999px;
+	  padding: 0;
+	  width: 80%;
+	}
+
+	.site-title a {
+	  background: url(images/logo-WATP-fff.svg);
+	  background-position: 50% 0;
+	  background-repeat: no-repeat;
+	  background-size: contain;
+	  z-index: 175;
+	}
+
+	.site-header .widget-area	{
+	  padding: 0.25em 10% 0;
+	  text-align: center;
+	}
+
+
+
 
 }
 
@@ -844,39 +860,36 @@ Structure and Layout
     width: 100%;
   }
 
-  .site-header {
-    background: url(images/courts-header.jpg)
-    height: 36vh;
-    margin: 0;
-  	padding: 0;
+  header.site-header	{
+  	height: 28vh;
   }
 
-  .site-header .wrap {
-    max-width: 100%;
-    padding: 0;
-  }
-
-	.site-title {
-	  margin: 0 auto;
-	  height: 1.4em;
-	  text-indent: -9999px;
-	  padding: 0;
-	  width: 50%;
+  .site-header .widget-area	{
+	 	text-align: center;
 	}
 
-	.site-title a {
-	  background: url(images/logo-WATP-fff.svg);
-	  background-position: 50% 0;
-	  background-repeat: no-repeat;
-	  background-size: contain;
+	.site-header .textwidget		{
+		margin: .5em 5% 1em;
 	}
 
-	.site-header .widget-area .widget  {
-		padding: 0 3%;
-		width: 100%;
+	.site-header nav ul	{
+	  background: none;
+	  height: 4em;
+	  margin: 0 5%;
 	}
 
-  .site-inner {
+	.site-header .textwidget p	{
+		color: #fff;
+		font-size: 110%;
+		line-height: 1;
+	}
+
+	.site-header nav li a	{
+	  float: left;
+	  margin: 0.5em 1em .5em 0;
+	}
+
+	.site-inner {
     margin: 0;
   }
 
@@ -1617,8 +1630,8 @@ img.inlinelogo  {
 	background: -webkit-linear-gradient(top,  rgba(153,170,187,0.12) 0%,rgba(255,255,255,0.37) 11%,rgba(252,253,253,0.39) 12%,rgba(153,170,187,0.2) 51%,rgba(255,255,255,0.4) 100%); /* Chrome10+,Safari5.1+ */
 	background: -o-linear-gradient(top,  rgba(153,170,187,0.12) 0%,rgba(255,255,255,0.37) 11%,rgba(252,253,253,0.39) 12%,rgba(153,170,187,0.2) 51%,rgba(255,255,255,0.4) 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top,  rgba(153,170,187,0.12) 0%,rgba(255,255,255,0.37) 11%,rgba(252,253,253,0.39) 12%,rgba(153,170,187,0.2) 51%,rgba(255,255,255,0.4) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(153,170,187,0.12) 0%,rgba(255,255,255,0.37) 11%,rgba(252,253,253,0.39) 12%,rgba(153,170,187,0.2) 51%,rgba(255,255,255,0.4) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f99aabb', endColorstr='#66ffffff',GradientType=0 ); /* IE6-9 */
+	background: linear-gradient(to bottom,  rgba(153,170,187,0.12) 0%,rgba(255,255,255,0.37); 11%,rgba(252,253,253,0.39) 12%,rgba(153,170,187,0.2) 51%,rgba(255,255,255,0.4) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ab', endColorstr='#fff',GradientType=0 ); /* IE6-9 */
 	/*--everything else--*/
 	border: 1px solid #fff;
 	border-radius: 50px;
@@ -2274,8 +2287,6 @@ Site Footer
   background-color: #fff;
   color: #344;
   font-size: 0.8em;
-  padding: .5em;
-  text-align: center;
 }
 
 .site-footer a	{
@@ -2285,6 +2296,16 @@ Site Footer
 .home .site-footer	{
 	background: #344;
 	color: #fff;
+}
+
+@media all and (max-width: 26.99em)	{
+
+	.site-footer	{
+		padding: 0 5%;
+  	text-align: left;
+
+	}
+
 }
 
 /* Objects
