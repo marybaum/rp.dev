@@ -39,7 +39,7 @@ function rp_breadcrumb_args($args) {
 	// Genesis 1.6 and later
 	$args['labels']['tag'] = __(' ', 'rp');
 	$args['labels']['date'] = __(' ', 'rp');
-	$args['labels']['search'] = __('Search for ', 'rp');
+	$args['labels']['search'] = __('Find ', 'rp');
 	$args['labels']['tax'] = __(' ', 'rp');
 	$args['labels']['post_type'] = __(' ', 'rp');
 	$args['labels']['404'] = __('404', 'rp');

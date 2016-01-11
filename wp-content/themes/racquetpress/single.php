@@ -8,15 +8,15 @@
  //add foundation markup to loop
 
 
-add_action('genesis_before_loop', 'gyfsingle_before_loop');
+add_action('genesis_before_loop', 'rpsingle_before_loop');
 
-function gyfsingle_before_loop(){
+function rpsingle_before_loop(){
 	echo '<div class="row small-12 medium-12 large-9 large-centered columns">';
 }
 
-add_action('genesis_after_loop', 'gyfsingle_after_loop');
+add_action('genesis_after_loop', 'rpsingle_after_loop');
 
-function gyfsingle_after_loop (){
+function rpsingle_after_loop (){
 	echo "</div></div>";
 }
 
