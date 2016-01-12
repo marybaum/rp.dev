@@ -72,7 +72,7 @@ function rp_enqueue_scripts() {
 	wp_register_style('foundation', get_stylesheet_directory_uri() . '/foundation/css/foundation.css');
 	wp_register_style('rp_googtype' , 'http://fonts.googleapis.com/css?family=Montez' , array() );
 	wp_register_style('rp_arquitecta' , get_stylesheet_directory_uri() . '/type/arquitectaLMBH/arquitecta.css' , array() , '2' );
-	wp_register_style('rp_aviano' , get_stylesheet_directory_uri() . '/type/avianosans/avianosans.css' , array() );
+	wp_register_style('rp_aviano' , get_stylesheet_directory_uri() . '/type/avianosans/avianosans.css' , array(), '2' );
 
 	wp_enqueue_style('foundation');
 	wp_enqueue_style('dashicons');
