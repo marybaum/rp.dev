@@ -446,11 +446,11 @@ h3 {
 
 h4 {
   color: #acf;
-  font-size: 2.1em;
+  font-size: 1.8em;
 }
 
 h5 {
-  font-size: 1.8em;
+  font-size: 1.4em;
 }
 
 h6 {
@@ -509,15 +509,7 @@ h2.site-description	{
 }
 
 .site-header nav li a	{
-  background: #465;
-  border: 2px solid;
-  border-radius: 200%;
-  color: #aca;
-  font-size: .8rem;
-	height: 3.4rem;
-	padding: 1rem 0;
-	text-align: center;
-	width: 3.4rem;
+  z-index: 3999;
 }
 
 
@@ -617,7 +609,57 @@ Structure and Layout
     padding: 0;
   }
 
-  header.site-header	{
+    header.site-header	{
+  	height: 10em;
+  }
+
+  .site-title {
+	  height: 1.25em;
+	  text-indent: -9999px;
+	}
+
+	.site-header .widget-area	{
+	  max-width: none;
+	  padding: 0;
+	  text-align: left;
+	}
+
+	.site-header .textwidget	{
+		margin: 0 0 1em;
+	}
+
+	.site-header .textwidget p	{
+		color: #fff;
+		font-size: 94%;
+		line-height: 1;
+	}
+
+	nav.nav-primary ul	{
+		padding: 0;
+		width: 100%;
+	}
+
+	.site-header nav ul li a	{
+	  background: #465;
+	  border: 2px solid;
+	  border-radius: 200%;
+	  color: #aca;
+	  float: left;
+	  font-size: .6em;
+	  height: 3.75em;
+	  line-height: .9;
+	  margin: 0 .5em 1em 0;
+	  padding: 1.3em 0;
+	  text-align: center;
+	  width: 3.75em;
+	}
+
+
+}
+
+/*@media all and (min-width: 27em)	{
+
+	  header.site-header	{
   	height: 45vh;
   }
 
@@ -647,7 +689,7 @@ Structure and Layout
 		text-align: center;
 	}
 
-	.site-header nav li a	{
+	.site-header nav ul li a	{
 	  background: #465;
 	  border: 2px solid;
 	  border-radius: 200%;
@@ -662,9 +704,10 @@ Structure and Layout
 	}
 
 
-}
 
-@media all and (min-width: 27em)	{
+}*/
+
+@media all and (min-width: 24em)	{
 
 	  .five-sixths,
   .four-sixths,
@@ -698,22 +741,47 @@ Structure and Layout
     width: 100%;
   }
 
-	header.site-header	{
-		height: 27vh;
-	}
+    header.site-header	{
+  	height: 10.3em;
+  	padding: 0;
+  }
 
-	.site-title {
-	  margin: 0 auto;
-	  height: 1.5em;
+  .site-title {
+	  height: 1.25em;
 	  text-indent: -9999px;
-	  padding: 0;
-	  width: 80%;
+	  margin: 0 0 0.1em;
 	}
 
-	.site-header .widget-area	{
-	  padding: 0.25em 10% 0;
-	  text-align: center;
+  .site-header .textwidget	{
+		margin: 0 auto;
+		width: 73%;
 	}
+
+	.site-header .textwidget p	{
+		color: #fff;
+		font-size: 97%;
+		line-height: 1;
+	}
+
+	.site-header nav ul	{
+		padding: 0.3em 1% 0;
+		width: 100%;
+	}
+
+	.site-header nav ul li a	{
+	  background: #465;
+	  border: 2px solid;
+	  border-radius: 200%;
+	  color: #aca;
+	  float: left;
+	  font-size: 0.8em;
+	  height: 3.6em;
+	  line-height: .9;
+	  margin: 0 0.4em 1em;
+	  padding: 1.2em 0;
+	  width: 3.6em;
+	}
+
 
 
 
@@ -722,19 +790,22 @@ Structure and Layout
 @media all and (min-width: 40em) {
 
   header.site-header	{
-  	height: 26vh;
+  	height: 12em;
   }
 
   .site-header .widget-area	{
+  	margin: 0 auto;
 	 	text-align: center;
+	 	max-width: 80em;
 	}
 
 	.site-header .textwidget		{
-		margin: .5em 5% 1em;
+		margin: .5em auto 2em;
 	}
 
 	.site-header nav ul	{
-	  margin: 0 0 0 8%;
+	  margin: 0 auto;
+	  width: 58%;
 	}
 
 	.site-header .textwidget p	{
@@ -743,9 +814,11 @@ Structure and Layout
 		line-height: 1;
 	}
 
-	.site-header nav li a	{
-	  float: left;
-	  margin: 0.5em 1em .5em 0;
+	.site-header nav ul li a	{
+		width: 3.7em;
+		height: 3.7em;
+		margin: 0 2%;
+		padding: 1.2em .2em;
 	}
 
 	.site-inner {
@@ -778,12 +851,12 @@ Structure and Layout
 @media all and (min-width: 52em)	{
 
 	header.site-header	{
-		height: 35vh;
+		max-width:
 		z-index: 200;
 	}
 
 	.site-header nav ul	{
-	  margin: 0 0 0 18%;
+	  width: 43%;
 	}
 
 
@@ -793,7 +866,7 @@ Structure and Layout
 @media all and (min-width: 80em) {
 
   header.site-header {
-    height: 270px;
+    height: 12em;
     margin: 0 0 3em;
     padding: 0;
   }
@@ -801,8 +874,7 @@ Structure and Layout
   .site-header .wrap {
 		 margin: 0 auto;
 		 padding: 0;
-		 max-width: 120em;
-		}
+	}
 
 	.site-title {
 	  margin: .1em auto 0;
@@ -816,8 +888,18 @@ Structure and Layout
 	}
 
 	.site-header nav ul	{
-	  margin: 0 calc((100% - 470px) / 2 );
+	  width: 33%;
 	}
+
+}
+
+@media and all (min-width: 120em)	{
+
+	.site-header nav ul	{
+	  width: 26%;
+	}
+
+}
 
 	.breadcrumb	{
 	   margin: 7em auto 0;
@@ -849,41 +931,6 @@ Structure and Layout
 	   margin: 0 0 .1em;
 	}
 
-	.home-top.widget-area	{
-		background: #344;
-		background-size: cover;
-		height: 100vh;
-		margin: 3.5em 0 0;
-		text-align: center;
-	}
-
-	.home .entry-content,
-	.home .entry-footer	{
-		display: none;
-	}
-
-	.home-top .textwidget {
-	  background: rgba(0, 0, 0, 0.3);
-	  padding: 15vh 15% 30vh;
-	  text-align: center;
-	  max-width: none;
-	  z-index: 99;
-	}
-
-
-	.home-bottom-left.widget-area h4,
-  .home-bottom-middle.widget-area h4,
-  .home-bottom-right.widget-area h4  {
-    font-size: 2em;
-    line-height: .8;
-    margin: 1.5em 0 0;
-  }
-
-  .home-bottom-left.widget-area img,
-  .home-bottom-middle.widget-area img,
-  .home-bottom-right.widget-area img  {
-    margin: 0;
-  }
 
 	.archive .entry {
 	  height: 100%;
@@ -898,12 +945,6 @@ Structure and Layout
 
 	.archive h2.entry-title {
 	  margin: 0 0 .3em;
-	}
-
-	.home-top .widget-title,
-	.home-top .entry-title {
-	  font: normal normal 5em/0.95 'arquitectalight', sans-serif;
-	  letter-spacing: -3px;
 	}
 
   .entry-footer .entry-meta {
@@ -929,7 +970,7 @@ Structure and Layout
     margin: 0;
   }
 
-}
+
 
 /* Home page
 --------------------------------------------- */
@@ -946,7 +987,7 @@ Structure and Layout
 }
 
 .home-top.widget-area   {
-  margin: 1em 0;
+  margin: 3em 0 0;
   max-width: none;
   position: relative;
   text-align: center;
@@ -960,6 +1001,7 @@ Structure and Layout
   width: 100%;
 }
 
+.home-top .entry-title a,
 .home-top .widget-wrap h2 {
   color: #fff;
   display: block;
@@ -967,44 +1009,44 @@ Structure and Layout
   letter-spacing: -1px;
   text-align: left;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  width: 40%;
 }
 
 @media all and (min-width: 0)	{
 
-	.home-top .widget-area	{
-		margin: 0;
+	.home .columns	{
+		padding: 0;
 	}
 
-	.home-top .textwidget h1 a {
-		font-size: 1em;
-		letter-spacing: -2px;
+	.home-top.widget-area   {
+	  margin: 1em 0 0;
+	  position: relative;
 	}
 
-	.home-top .textwidget h3 {
-		font-size: 1em;
-		margin-bottom: -.5em
+ 	.home-top .widget-wrap h2,
+	.home-top .widget-wrap h2 a {
+	  position: absolute;
+	  top: 1.6em;
+	  left: 0.2em;
+	  font: normal normal 1.6em/0.9 arquitectamed, sans-serif;
+	  letter-spacing: .2px;
+	  width: 90%;
 	}
 
 
 }
+
 @media all and (min-width: 40em){
 
-	.home-top.widget-area	{
-		min-height: 80vh;
-		margin: 3em 0 0;
-		padding: 1em 0;
-		text-align: center;
+	.home-top .widget-area	{
+		margin: 3em 0;
 	}
 
-  .home-top .textwidget {
-	padding: 13% 10%;
-  }
-
-  .home-top .widget-wrap h2 {
+ 	.home-top .widget-wrap h2,
+	.home-top .widget-wrap h2 a {
 	  position: absolute;
-	  top: 0.4em;
-	  left: .3em;
+	  top: 6.4em;
+	  left: .6em;
+	  font-size: 2em;
 	}
 
 	.home-top .textwidget h3 {
@@ -1020,82 +1062,64 @@ Structure and Layout
 
 @media all and (min-width: 64em){
 
+	.home .columns,
+	.home .column	{
+		margin: 0;
+		padding: 0;
+	}
+
 	.home-top .widget-wrap h2 {
-	  font-size: 5em;
+	  font: normal normal 3em/.8 arquitectalight, sans-serif;
+	  top: 5em;
 	}
 
 }
 
+@media all and (min-width: 80em)	{
 
-.home-top .textwidget h3,
-.home-top .textwidget h3 a  {
-  color: #fff;
-  font: normal normal normal 3em/1 arquitectamed, sans-serif;
+	.home-top .widget-wrap h2 {
+	  font: normal normal 5em/.8 arquitectalight, sans-serif;
+	  top: 3.3em;
+	}
+
 }
 
-.home-top .entry-content p	{
-	height: 0;
-	margin: 0;
-}
+	.homegrid-1,
+	.homegrid-2,
+	.homegrid-3	{
+		margin: 0 1%;
+	}
 
-.homegrid-1,
-.homegrid-2,
-.homegrid-3	{
-	margin: 0 1%;
-}
+	.homegrid-1.widget-area,
+	.homegrid-2.widget-area,
+	.homegrid-3.widget-area {
+	  border: none;
+	  margin: 0;
+	  padding: 0;
+	  position: relative;
+	}
 
-.homegrid-1.widget-area,
-.homegrid-2.widget-area,
-.homegrid-3.widget-area {
-  border: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
+	.homegrid-1 img,
+	.homegrid-2 img,
+	.homegrid-3 img {
+	  border-radius: 0;
+	  margin: 0 0 .2em;
+	}
 
-.homegrid-1 img,
-.homegrid-2 img,
-.homegrid-3 img {
-  border-radius: 0;
-  margin: 0 0 .2em;
-}
+	.homegrid-1 h4,
+	.homegrid-2 h4,
+	.homegrid-3 h4	{
+		color: #fff;
+		background: rgba(0,0,0,.25);
+		position: absolute;
+		top: 0.7em;
+		left: 0.7em;
+		right: 0.7em;
+		padding: 0.3em;
+		z-index: 995;
+	}
 
-.homegrid-1 h4,
-.homegrid-2 h4,
-.homegrid-3 h4	{
-	color: #fff;
-	background: rgba(0,0,0,.25);
-	position: absolute;
-	top: 0.7em;
-	left: 0.7em;
-	right: 0.7em;
-	padding: 0.3em;
-	z-index: 995;
-}
 
-.featured-content .entry {
-  border: none;
-  margin: 1.4em 0;
-  padding: 0;
-}
-
-.featured-content .entry-title {
-  border: none;
-  color: #177;
-  font-family: arquitectabold, sans-serif;
-  font-size: 1.4em;
-  height: 3.2em;
-  line-height: 1.2;
-  margin: 0 .1em .1em;
-}
-
-.featured-content .entry-title a {
-  border: none;
-  color: #177;
-}
-
-.featured-content .entry-title a:hover  {
-  color: #477;
 }
 
 .homegrid-1 .featured-content .callout,
@@ -1144,7 +1168,6 @@ Structure and Layout
 .home article h1 .entry-title,
 .home article header.entry-header,
 .slides article h1.entry-title,
-.page-template-single-php article h1.entry-title,
 .about article h1.entry-title,
 .single article h1.entry-title {
   display: none;
@@ -1159,14 +1182,13 @@ Structure and Layout
 }
 
 .archive .entry {
-  height: 15em;
   overflow: hidden;
 }
 
 .widget-title,
 .archive .entry-title {
-  font-size: 1.2em;
-  margin: -4em .2em 1em;
+  font-size: 2em;
+  margin: -3.4em 0.5em 1em;
 }
 
 .archive h2.entry-title {
@@ -1662,9 +1684,61 @@ Content Area
   display: none;
 }
 
+@media all and (min-width: 0)	{
+
+	.single .site-inner {
+		padding: 0;
+	}
+
+	.single h1.entry-title {
+	  color:  #fff;
+	  display: block;
+	  font: normal normal 2.3em/.9 'arquitectalight', sans-serif;
+	  letter-spacing: -1px;
+	  margin: 15vh 5% 5vh;
+	  text-align: left;
+	  text-shadow: 1px 1px 0 #222;
+	  z-index: 99;
+	}
+
+.single .entry-content .intro	{
+  -webkit-column-span: all;
+  column-span: all;
+  margin: 1em 0;
+}
+
+.single .entry-content h2	{
+  color: #344;
+  font-size: 2.3em;
+  line-height: .95;
+  margin: 0;
+}
+
+.single .entry-content h3	{
+  color: #344;
+  font-family: arquitectamed, sans-serif;
+  letter-spacing: -1px;
+  line-height: 1.1;
+}
+
+.single .entry-content h3:nth-of-type(1)	{
+ -webkit-column-span: all;
+  column-span: all;
+  margin: 0.3em 0;
+}
+
+.single .entry-content h4	{
+	color: #344;
+	font-family: arquitectaheavy, sans-serif;
+	font-size: 1.6em;
+}
+
+
+
+}
+
 @media all and (min-width: 40em) {
 
-	.home-top .entry-title a,
 	.about h1.entry-title,
 	.single h1.entry-title {
 	  color:  #fff;
@@ -1734,7 +1808,7 @@ Content Area
 }
 
 .single .entrybgd {
-  padding: 1em;
+  padding: 1em .5em;
 }
 
 .single .entry-content,
@@ -1765,17 +1839,10 @@ Content Area
   margin: 1em 0;
 }
 
-.single h1.entry-title {
-	color: #fff;
-	line-height: .9;
-	text-align: center;
-}
-
 .single .entry-content h2	{
   color: #344;
   -webkit-column-span: all;
   column-span: all;
-  letter-spacing: -1px;
   margin: 0.3em 0;
 }
 
@@ -1795,6 +1862,7 @@ Content Area
 .single .entry-content h4	{
 	color: #344;
 	font-family: arquitectaheavy, sans-serif;
+	font-size: 1.6em;
 }
 
 .single.slides .entry-content  {
@@ -1811,7 +1879,7 @@ Content Area
 .entry-content ol,
 .entry-content p,
 .quote-caption {
-  margin: 0 0 .3em;
+  margin: 0 0 .5em;
 }
 
 .entry-content ol li {
@@ -1821,7 +1889,7 @@ Content Area
 .entry-content ul li ul li ul li,
 .entry-content ul li {
   background-image: url(images/bullet.svg);
-  background-position: 0 3px;
+  background-position: 0 9px;
   background-repeat: no-repeat;
   background-size: .85em;
   padding: 0 0 .3em 24px;
@@ -1940,17 +2008,7 @@ header.entry-header {
 .comment-respond,
 .entry-comments,
 .entry-pings {
-  background: #fff;
-  margin: 1em;
-}
-
-.entry-comments {
-  padding: 2rem;
-}
-
-.comment-respond,
-.entry-pings {
-  padding: 0;
+  margin: 0;
 }
 
 .comment-content {
@@ -1964,7 +2022,7 @@ header.entry-header {
 .comment-respond input[type="email"],
 .comment-respond input[type="text"],
 .comment-respond input[type="url"] {
-  width: 50%;
+  width: 100%;
 }
 
 .comment-respond label {
@@ -1978,9 +2036,8 @@ header.entry-header {
 }
 
 .comment-list li {
-  margin: .4em;
-  padding: 32px;
-  padding: 3.2rem;
+  margin: .2em;
+  padding: .5em;
 }
 
 .comment-list li li {
@@ -1995,23 +2052,17 @@ li.comment {
 }
 
 .comment .avatar {
-  margin: 0 16px 24px 0;
-  margin: 0 1.6rem 2.4rem 0;
+  margin: 0 1em 1em 0;
 }
 
 .entry-pings .reply {
   display: none;
 }
 
-.bypostauthor {
-}
-
 .form-allowed-tags {
   background-color: #f5f5f5;
-  font-size: 14px;
-  font-size: 1.4rem;
-  padding: 24px;
-  padding: 2.4rem;
+  font-size: 1em;
+  padding: .5em;
 }
 
 
