@@ -87,9 +87,6 @@ Blues:
 ----------------------------------------------------------------------------------------------------- */
 
 
-/* HTML5 Reset
----------------------------------------------------------------------------------------------------- */
-
 /* Baseline Normalize
   normalize.css v2.1.2 | MIT License | git.io/normalize
 --------------------------------------------- */
@@ -817,7 +814,7 @@ Structure and Layout
 	.site-header nav ul li a	{
 		width: 3.7em;
 		height: 3.7em;
-		margin: 0 2%;
+		margin: 0 2% 1em;
 		padding: 1.2em .2em;
 	}
 
@@ -888,7 +885,7 @@ Structure and Layout
 	}
 
 	.site-header nav ul	{
-	  width: 33%;
+	  width: 34%;
 	}
 
 }
@@ -974,6 +971,7 @@ Structure and Layout
 
 /* Home page
 --------------------------------------------- */
+
 .home .row {
 	max-width: none;
 }
@@ -1001,8 +999,7 @@ Structure and Layout
   width: 100%;
 }
 
-.home-top .entry-title a,
-.home-top .widget-wrap h2 {
+.home-top h2.entry-title a {
   color: #fff;
   display: block;
   font: normal normal 2.7em/0.75 arquitectalight, sans-serif;
@@ -1078,7 +1075,8 @@ Structure and Layout
 @media all and (min-width: 80em)	{
 
 	.home-top .widget-wrap h2 {
-	  font: normal normal 5em/.8 arquitectalight, sans-serif;
+	  font: normal normal 4.5em/.9 arquitectalight, sans-serif;
+	  left: .4em;
 	  top: 3.3em;
 	}
 
@@ -1106,16 +1104,17 @@ Structure and Layout
 	  margin: 0 0 .2em;
 	}
 
-	.homegrid-1 h4,
-	.homegrid-2 h4,
-	.homegrid-3 h4	{
+	.homegrid-1 h2.entry-title a,
+	.homegrid-2 h2.entry-title a,
+	.homegrid-3 h2.entry-title a		{
 		color: #fff;
-		background: rgba(0,0,0,.25);
-		position: absolute;
-		top: 0.7em;
-		left: 0.7em;
-		right: 0.7em;
+		font-family: arquitectalight, sans-serif;
+		left: 0;
 		padding: 0.3em;
+		position: absolute;
+		right: 30%;
+		top: 0;
+		text-shadow: 1px 1px 1px rgba(0,0,0,.5);
 		z-index: 995;
 	}
 
@@ -1131,7 +1130,7 @@ Structure and Layout
 
 .featured-content .callout h3  {
 	color: #03b;
-	font: normal normal normal .9em/1.2 cabritonorm-book, serif;
+	font: normal normal normal .9em/1.2 avianosansblack, sans-serif;
 }
 
 .featured-content p.more-from-category a  {
@@ -1165,8 +1164,6 @@ Structure and Layout
 
 /* We hide these because they duplicate the big head in the middle of the giant pic.*/
 .single article .entry-header img.attachment-full,
-.home article h1 .entry-title,
-.home article header.entry-header,
 .slides article h1.entry-title,
 .about article h1.entry-title,
 .single article h1.entry-title {
@@ -1671,6 +1668,10 @@ Content Area
 	line-height: 1.1;
 }
 
+.entry-content .aff a {
+	color: #2c4;
+}
+
 .entry-content a:hover {
   color: #acf;
 }
@@ -1701,37 +1702,43 @@ Content Area
 	  z-index: 99;
 	}
 
-.single .entry-content .intro	{
-  -webkit-column-span: all;
-  column-span: all;
-  margin: 1em 0;
-}
+	.single .entry-content .intro	{
+	  -webkit-column-span: all;
+	  column-span: all;
+	  margin: 1em 0;
+	}
 
-.single .entry-content h2	{
-  color: #344;
-  font-size: 2.3em;
-  line-height: .95;
-  margin: 0;
-}
+	.single .entry-content h2	{
+	  color: #344;
+	  font-size: 2.3em;
+	  line-height: .95;
+	  margin: 0;
+	}
 
-.single .entry-content h3	{
-  color: #344;
-  font-family: arquitectamed, sans-serif;
-  letter-spacing: -1px;
-  line-height: 1.1;
-}
+	.single .entry-content h3	{
+	  color: #344;
+	  font-family: arquitectamed, sans-serif;
+	  letter-spacing: -1px;
+	  line-height: 1.1;
+	}
 
-.single .entry-content h3:nth-of-type(1)	{
- -webkit-column-span: all;
-  column-span: all;
-  margin: 0.3em 0;
-}
+	.single .entry-content h3:nth-of-type(1)	{
+	 -webkit-column-span: all;
+	  column-span: all;
+	  margin: 0.3em 0;
+	}
 
-.single .entry-content h4	{
-	color: #344;
-	font-family: arquitectaheavy, sans-serif;
-	font-size: 1.6em;
-}
+	.single .entry-content h4	{
+		color: #344;
+		font-family: arquitectaheavy, sans-serif;
+		font-size: 1.6em;
+	}
+
+	.optin.widget-area	{
+	-webkit-column-span: all;
+	  column-span: all;
+	  margin: 1em 0;
+	}
 
 
 
@@ -1853,6 +1860,7 @@ Content Area
   line-height: 1.1;
 }
 
+.single .entry-footer,
 .single .entry-content h3:nth-of-type(1)	{
  -webkit-column-span: all;
   column-span: all;
@@ -2112,41 +2120,29 @@ Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
 
 .footer-widgets {
-  background: none;
-  color: #344;
+  background: #344;
+  color: #fff;
   clear: both;
 }
 
 .footer-widgets .wrap	{
-	margin: -2rem auto;
+	margin: .2em auto;
 }
 
-.footer-widgets-1	{
-	margin: 0 auto;
-	width: 40%;
-}
-
+.footer-widgets-1,
 .footer-widgets-2,
 .footer-widgets-3 {
-  width: 0;
-}
-
-.footer-widgets-1 {
-  margin: 0 auto;
-}
-
-.footer-widgets-1 {
   display: block;
+  margin: 0;
 }
 
-.footer-widgets .widget {
-  margin: -3rem 0 0 6.4rem;
+ .footer-widgets .widget {
+  margin: 0;
 }
 
 .footer-widgets li {
   list-style-type: none;
-  margin-bottom: 6px;
-  margin-bottom: 0.6rem;
+  margin: 0 0 .2em;
   word-wrap: break-word;
 }
 
