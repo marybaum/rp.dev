@@ -1049,39 +1049,7 @@ Structure and Layout
 	.home-top .textwidget h3 {
 		line-height: 1.2;
 	}
-
-	.home .content {
-		margin: 0;
-		padding: 0;
-	}
-
-}
-
-@media all and (min-width: 64em){
-
-	.home .columns,
-	.home .column	{
-		margin: 0;
-		padding: 0;
-	}
-
-	.home-top .widget-wrap h2 {
-	  font: normal normal 3em/.8 arquitectalight, sans-serif;
-	  top: 5em;
-	}
-
-}
-
-@media all and (min-width: 80em)	{
-
-	.home-top .widget-wrap h2 {
-	  font: normal normal 4.5em/.9 arquitectalight, sans-serif;
-	  left: .4em;
-	  top: 3.3em;
-	}
-
-}
-
+	
 	.homegrid-1,
 	.homegrid-2,
 	.homegrid-3	{
@@ -1108,16 +1076,60 @@ Structure and Layout
 	.homegrid-2 h2.entry-title a,
 	.homegrid-3 h2.entry-title a		{
 		color: #fff;
-		font-family: arquitectalight, sans-serif;
+		font: normal normal .7em/.9 arquitectalight, sans-serif;
 		left: 0;
 		padding: 0.3em;
 		position: absolute;
-		right: 30%;
+		right: 20%;
 		top: 0;
-		text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+		text-shadow: 1px 1px 1px rgba(0,0,50,.75);
 		z-index: 995;
 	}
+	
 
+	.home .content {
+		margin: 0;
+		padding: 0;
+	}
+	
+	
+
+}
+
+@media all and (min-width: 64em){
+
+	.home .columns,
+	.home .column	{
+		margin: 0;
+		padding: 0;
+	}
+
+}
+
+@media all and (min-width: 80em)	{
+
+	
+	.homegrid-1,
+	.homegrid-2,
+	.homegrid-3	{
+		margin: 0;
+	}
+
+	.homegrid-1.widget-area,
+	.homegrid-2.widget-area,
+	.homegrid-3.widget-area {
+	  border: none;
+	  margin: 0;
+	  padding: 0;
+	  position: relative;
+	}
+
+	.homegrid-1 img,
+	.homegrid-2 img,
+	.homegrid-3 img {
+	  border-radius: 0;
+	  margin: 0;
+	}
 
 }
 
