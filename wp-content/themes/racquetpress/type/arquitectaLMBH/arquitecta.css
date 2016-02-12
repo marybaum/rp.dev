@@ -24,6 +24,18 @@
 
 
 @font-face {
+    font-family: 'arquitectabook';
+    src: url('ArquitectaBook-webfont.eot');
+    src: url('ArquitectaBook-webfont.eot?#iefix') format('embedded-opentype'),
+         url('ArquitectaBook-webfont.woff') format('woff'),
+         url('ArquitectaBook-webfont.ttf') format('truetype'),
+         url('ArquitectaBook-webfont.svg#arquitectabook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
     font-family: 'arquitectabold';
     src: url('ArquitectaBold-webfont.eot');
     src: url('ArquitectaBold-webfont.eot?#iefix') format('embedded-opentype'),

@@ -1014,19 +1014,21 @@ Structure and Layout
 		padding: 0;
 	}
 
-	.home-top.widget-area   {
-	  margin: 1em 0 0;
-	  position: relative;
+	.home .columns	{
+		padding: 0;
 	}
 
- 	.home-top .widget-wrap h2,
-	.home-top .widget-wrap h2 a {
-	  position: absolute;
-	  top: 1.6em;
-	  left: 0.2em;
-	  font: normal normal 1.6em/0.9 arquitectamed, sans-serif;
-	  letter-spacing: .2px;
-	  width: 90%;
+	.homegrid-1 h2.entry-title a,
+	.homegrid-2 h2.entry-title a,
+	.homegrid-3 h2.entry-title a		{
+		color: #fff;
+		font: normal normal .7em/.85 arquitectabook, sans-serif;
+		left: 0;
+		padding: 0.2em;
+		position: absolute;
+		top: 0;
+		text-shadow: 2px 2px 1px rgba(0,0,50,.75);
+		z-index: 95;
 	}
 
 
@@ -1076,14 +1078,13 @@ Structure and Layout
 	.homegrid-2 h2.entry-title a,
 	.homegrid-3 h2.entry-title a		{
 		color: #fff;
-		font: normal normal .7em/.9 arquitectalight, sans-serif;
+		font: normal normal .7em/.85 arquitectabook, sans-serif;
 		left: 0;
 		padding: 0.3em;
 		position: absolute;
-		right: 20%;
 		top: 0;
-		text-shadow: 1px 1px 1px rgba(0,0,50,.75);
-		z-index: 995;
+		text-shadow: 2px 2px 1px rgba(0,0,50,.75);
+		z-index: 95;
 	}
 	
 
@@ -1129,6 +1130,13 @@ Structure and Layout
 	.homegrid-3 img {
 	  border-radius: 0;
 	  margin: 0;
+	  position: relative;
+	}
+	
+	.homegrid-1 h2.entry-title a,
+	.homegrid-2 h2.entry-title a,
+	.homegrid-3 h2.entry-title a {
+		right: 20%;
 	}
 
 }
@@ -1146,11 +1154,13 @@ Structure and Layout
 }
 
 .featured-content p.more-from-category a  {
-  background: #177;
-  color: #fff;
-  display: block;
+  background: #465;
+  border: 2px solid;
+  border-radius:  200%;
+  color: #aca;
+  position: absolute;
   font-size: 1em;
-  margin: .1em 0;
+  margin: -0.75em 0;
   padding: .1em;
   text-align: center;
 }
@@ -1670,7 +1680,7 @@ Content Area
 --------------------------------------------- */
 
 .entry {
-  margin: 0 0 2rem;
+  margin: 0 0 .5em;
   padding: 0;
 }
 
@@ -1778,9 +1788,9 @@ Content Area
 	  -webkit-column-count: 2;
 	  -moz-column-count: 2;
 	   column-count: 2;
-	  -webkit-column-gap: 5vw;
-	  -moz-column-gap: 5vw;
-	   column-gap: 5vw;
+	  -webkit-column-gap: 2em;
+	  -moz-column-gap: 2em;
+	   column-gap: 2em;
 	}
 
 }

@@ -25,7 +25,7 @@ function rphome_genesis_meta() {
 		remove_action( 'genesis_loop', 'genesis_do_loop' );
 
 		//* Add home widgets
-	 add_action( 'genesis_after_header', 'rphome_markup' );
+	 add_action( 'genesis_loop', 'rphome_markup' );
 
 	}
 }
