@@ -1154,14 +1154,19 @@ Structure and Layout
 }
 
 .featured-content p.more-from-category a  {
-  background: #465;
+  background: rgba(0,0,0,.5);
   border: 2px solid;
-  border-radius:  200%;
+  border-radius: 2em;
   color: #aca;
   position: absolute;
   font-size: 1em;
-  margin: -0.75em 0;
-  padding: .1em;
+  bottom: -11%;
+  left: 8%;
+  width: 25%;
+  height: 24%;
+  overflow: hidden;
+  padding: 0.9em;
+  line-height: .8;
   text-align: center;
 }
 
