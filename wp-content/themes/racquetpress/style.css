@@ -1077,13 +1077,16 @@ Structure and Layout
 	.homegrid-1 h2.entry-title a,
 	.homegrid-2 h2.entry-title a,
 	.homegrid-3 h2.entry-title a		{
+		background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		color: #fff;
 		font: normal normal .7em/.85 arquitectabook, sans-serif;
+		height: 2.4em;
 		left: 0;
 		padding: 0.3em;
 		position: absolute;
 		top: 0;
 		text-shadow: 2px 2px 1px rgba(0,0,50,.75);
+		width: 100%;
 		z-index: 95;
 	}
 	
@@ -1154,20 +1157,20 @@ Structure and Layout
 }
 
 .featured-content p.more-from-category a  {
-  background: rgba(0,0,0,.5);
-  border: 2px solid;
-  border-radius: 2em;
-  color: #aca;
-  position: absolute;
-  font-size: 1em;
-  bottom: -11%;
-  left: 8%;
-  width: 25%;
-  height: 24%;
-  overflow: hidden;
-  padding: 0.9em;
-  line-height: .8;
-  text-align: center;
+	background: rgba(40, 60, 50, 0.8);
+	border: 2px solid;
+	border-radius: 2em;
+	color: #8a8;
+	position: absolute;
+	font-size: 1em;
+	bottom: -3%;
+	left: 8%;
+	width: 25%;
+	height: 14%;
+	overflow: hidden;
+	padding: 1.6em 0;
+	line-height: .8;
+	text-align: center;
 }
 
 /* Titles
