@@ -458,62 +458,6 @@ h6 {
   text-transform: uppercase;
 }
 
-/*
-Site Header - title, nav structure
----------------------------------------------------------------------------------------------------- */
-header.site-header {
-  background: #ccc url(images/courts-header.jpg) 50% 30% no-repeat;
-  background-blend-mode: multiply;
-  background-size: cover;
-	width: 100%;
-  z-index: 99;
-}
-
-.site-header .title-area,
-.site-header .widget-area	{
-	padding: 2em 0 0;
-	width: 100%;
-}
-
-.site-title {
-  background: url(images/logo-WATP-fff.svg) 50% bottom no-repeat;
-  background-size: contain;
-  text-indent: -9999px;
-  padding: 0;
-}
-
-.site-title a {
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-	background-size: contain;
-	display: block;
-	z-index: 175;
-}
-
-h2.site-description	{
-  text-indent: -99999px;
-}
-
-.site-header .textwidget p	{
-	color: #fff;
-	font-family: 'arquitectalight', sans-serif;
-	line-height: 1;
-}
-
-.site-header nav ul		{
-	background: none;
-	z-index: 1999;
-}
-
-.site-header nav li a	{
-  z-index: 3999;
-}
-
-
-.site-inner {
-  padding: 0 3%;
-  z-index: -999;
-}
 
 /*
 Shrinks
@@ -579,7 +523,7 @@ Shrinks
 
 
 /*
-Structure and Layout
+Site title, header nav
 ---------------------------------------------------------------------------------------------------- */
 
 @media all and (min-width: 0) {
@@ -593,8 +537,14 @@ Structure and Layout
   .footer-widgets-2,
   .footer-widgets-3,
   .site-inner {
-    padding: 0 5%;
+    padding: 0 6%;
     width: 100%;
+  }
+  
+  .site-header .wrap,
+  .site-inner,
+  .content-sidebar-wrap 	{
+  	max-width: 90em;
   }
 
 	.archive-description,
@@ -605,6 +555,64 @@ Structure and Layout
   .entry-footer .entry-meta {
     padding: 0;
   }
+
+  header.site-header {
+  background: #ccc url(images/courts-header.jpg) 50% 30% no-repeat;
+  background-blend-mode: multiply;
+  background-size: cover;
+	width: 100%;
+  z-index: 99;
+}
+
+.site-header .title-area,
+.site-header .widget-area	{
+	padding: 2em 0 0;
+	width: 100%;
+}
+
+.site-title {
+  background: url(images/logo-WATP-fff.svg) 50% bottom no-repeat;
+  background-size: contain;
+  text-indent: -9999px;
+  padding: 0;
+}
+
+.site-title a {
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+	background-size: contain;
+	display: block;
+	z-index: 175;
+}
+
+h2.site-description	{
+  text-indent: -99999px;
+}
+
+.site-header .textwidget p	{
+	color: #fff;
+	font-family: 'arquitectalight', sans-serif;
+	line-height: 1;
+}
+
+.site-header nav ul		{
+	background: none;
+	z-index: 1999;
+}
+
+.site-header nav li a	{
+  z-index: 3999;
+}
+
+
+.site-inner {
+  padding: 0 3%;
+  z-index: -999;
+}
+
+/*
+Structure and Layout
+---------------------------------------------------------------------------------------------------- */
 
     header.site-header	{
   	height: 15em;
@@ -645,7 +653,7 @@ Structure and Layout
 	  font-size: 0.8em;
 	  height: 3.75em;
 	  line-height: .9;
-	  margin: 0 .3em 1em 0;
+	  margin: 0 .3em .3em 0;
 	  padding: 1.3em 0;
 	  text-align: center;
 	  width: 3.75em;
@@ -711,7 +719,7 @@ Structure and Layout
 
 }*/
 
-@media all and (min-width: 24em)	{
+@media all and (min-width: 23em)	{
 
 	 .five-sixths,
   .four-sixths,
@@ -740,8 +748,10 @@ Structure and Layout
   }
 
     header.site-header	{
-  	height: 10.3em;
-  	padding: 0;
+  	height: 13em;
+  	margin-bottom: 1.6em;
+	padding: 0;
+	text-align: left;
   }
 
   .site-title {
@@ -750,9 +760,9 @@ Structure and Layout
 	  margin: 0 0 0.1em;
 	}
 
-  .site-header .textwidget	{
+  .site-header .widget-area	{
 		margin: 0 auto;
-		width: 73%;
+		width: 80%;
 	}
 
 	.site-header .textwidget p	{
@@ -767,31 +777,28 @@ Structure and Layout
 	}
 
 	.site-header nav ul li a	{
-	  background: #465;
-	  border: 2px solid;
-	  border-radius: 200%;
-	  color: #aca;
-	  float: left;
-	  font-size: 0.8em;
+	  font-size: 0.9em;
 	  height: 3.6em;
-	  line-height: .9;
-	  margin: 0 0.4em 1em;
-	  padding: 1.2em 0;
-	  width: 3.6em;
+	  margin: 0 0.4em .4em 0;
+	  padding: 28% 5%;
+	  width: 3.7em;
 	}
-
 }
 
 @media all and (min-width: 40em) {
 
   header.site-header	{
-  	height: 12em;
+  	height: 15em;
+  }
+  
+  .site-title{
+  	height: 1.5em;
   }
 
   .site-header .widget-area	{
   	margin: 0 auto;
 	 	text-align: center;
-	 	max-width: 80em;
+	 	max-width: 90em;
 	}
 
 	.site-header .textwidget		{
@@ -800,7 +807,7 @@ Structure and Layout
 
 	.site-header nav ul	{
 	  margin: 0 auto;
-	  width: 58%;
+	  width: 100%;
 	}
 
 	.site-header .textwidget p	{
@@ -810,16 +817,17 @@ Structure and Layout
 	}
 
 	.site-header nav ul li a	{
-		width: 3.7em;
-		height: 3.7em;
-		margin: 0 2% 1em;
-		padding: 1.2em .2em;
+		margin: 0 .4em;
 	}
 
 	.site-inner {
     margin: 0;
+    max-width: 90em;
   }
 
+  .content-sidebar-wrap	{
+  	padding: 0;
+  }
 
 	.archive-title {
       font-size: 2.3em;
@@ -842,59 +850,31 @@ Structure and Layout
 
 }
 
-
-@media all and (min-width: 52em)	{
-
-	header.site-header	{
-		max-width:
-		z-index: 200;
-	}
-
-	.site-header nav ul	{
-	  width: 43%;
-	}
-
-
-
-}
-
 @media all and (min-width: 80em) {
 
   header.site-header {
-    height: 12em;
-    margin: 0 0 3em;
+    margin: 0 0 1em;
+    max-width: 90em;
     padding: 0;
   }
 
   .site-header .wrap {
-		 margin: 0 auto;
 		 padding: 0;
 	}
 
 	.site-title {
-	  margin: .1em auto 0;
+	  margin: .2em auto 0;
 	  text-indent: -9999px;
-	  padding: 0;
-	  width: 50%;
 	}
 
 	.site-header .textwidget p	{
 		font-size: 120%;
 	}
 
-	.site-header nav ul	{
-	  width: 34%;
-	}
-
 }
 
-@media and all (min-width: 120em)	{
-
-	.site-header nav ul	{
-	  width: 26%;
-	}
-
-}
+/* Genesis nav menus. Keeps stuff in place.
+ -----------------------------------------------*/
 
 .genesis-nav-menu .menu-item {
   display: inline-block;
@@ -1126,19 +1106,16 @@ ul.genesis-nav-menu li a {
 		padding: 0;
 	}
 
-	.home .columns	{
-		padding: 0;
-	}
-
 	.homegrid-1 h2.entry-title a,
 	.homegrid-2 h2.entry-title a,
 	.homegrid-3 h2.entry-title a		{
-		background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		background: linear-gradient(to bottom, rgba(0,0,0,0.6) 10%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		color: #fff;
 		font: normal normal .6em/.85 arquitectabook, sans-serif;
 		left: 0;
 		padding: 0.2em;
 		position: absolute;
+		right: 0;
 		top: 0;
 		text-shadow: 1px 1px 1px rgba(0,0,50,.75);
 	}
@@ -1168,8 +1145,7 @@ ul.genesis-nav-menu li a {
 		margin: 3em 0;
 	}
 
- 	.home-top .widget-wrap h2,
-	.home-top .widget-wrap h2 a {
+ 	.home-top .widget-wrap h2 a {
 	  position: absolute;
 	  top: 6.4em;
 	  left: .6em;
@@ -1180,51 +1156,22 @@ ul.genesis-nav-menu li a {
 		line-height: 1.2;
 	}
 	
-	.homegrid-1,
-	.homegrid-2,
-	.homegrid-3	{
-		margin: 0 1%;
-	}
-
-	.homegrid-1.widget-area,
-	.homegrid-2.widget-area,
-	.homegrid-3.widget-area {
-	  border: none;
-	  margin: 0;
-	  padding: 0;
-	  position: relative;
-	}
-
-	.homegrid-1 img,
-	.homegrid-2 img,
-	.homegrid-3 img {
-	  border-radius: 0;
-	  margin: 0 0 .2em;
-	}
-
 	.homegrid-1 h2.entry-title a,
 	.homegrid-2 h2.entry-title a,
 	.homegrid-3 h2.entry-title a		{
-		background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-		color: #fff;
-		font: normal normal .7em/.85 arquitectabook, sans-serif;
-		height: 2.4em;
-		left: 0;
+		background: linear-gradient(to bottom, rgba(0,0,0,0.5) 15%,rgba(0,0,0,0) 100%);/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		font: normal normal 0.6em/.85 arquitectabook, sans-serif;
 		padding: 0.3em;
-		position: absolute;
-		top: 0;
-		text-shadow: 2px 2px 1px rgba(0,0,50,.75);
-		width: 100%;
-		z-index: 95;
 	}
-	
 
 	.home .content {
 		margin: 0;
 		padding: 0;
 	}
 	
-	
+	.featured-content p.more-from-category a {
+		bottom: 6%;
+	}
 
 }
 
@@ -1241,49 +1188,11 @@ ul.genesis-nav-menu li a {
 @media all and (min-width: 80em)	{
 
 	
-	.homegrid-1,
-	.homegrid-2,
-	.homegrid-3	{
-		margin: 0;
-	}
-
-	.homegrid-1.widget-area,
-	.homegrid-2.widget-area,
-	.homegrid-3.widget-area {
-	  border: none;
-	  margin: 0;
-	  padding: 0;
-	  position: relative;
-	}
-
-	.homegrid-1 img,
-	.homegrid-2 img,
-	.homegrid-3 img {
-	  border-radius: 0;
-	  margin: 0;
-	  position: relative;
-	}
-	
-	.homegrid-1 h2.entry-title a,
-	.homegrid-2 h2.entry-title a,
-	.homegrid-3 h2.entry-title a {
-		right: 20%;
-	}
-	
 	.featured-content p.more-from-category a  {
-		background: rgba(40, 60, 50, 0.8);
-		border: 2px solid;
-		border-radius: 2em;
-		color: #8a8;
-		position: absolute;
 		font-size: 1em;
-		bottom: -3%;
-		left: 8%;
-		width: 25%;
-		height: 14%;
-		overflow: hidden;
-		padding: 1.6em 0;
-		line-height: .8;
+		left: 4%;
+		width: 45%;
+		padding: 5% 6%;
 		text-align: center;
 	}
 
