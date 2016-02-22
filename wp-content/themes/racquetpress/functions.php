@@ -22,6 +22,13 @@ add_theme_support('genesis-connect-woocommerce');
 //* Nuke the site description
 remove_action( 'genesis_site_description', 'genesis_seo_site_description' );
 
+//* Nuke most of the entry meta in the entry header (requires HTML5 theme support)
+add_filter( 'genesis_post_info', 'sp_post_info_filter' );
+function sp_post_info_filter($post_info) {
+    $post_info = '[post_edit]';
+    return $post_info;
+}
+
 //* Reposition the breadcrumbs
 remove_action('genesis_before_loop', 'genesis_do_breadcrumbs');
 add_action('genesis_after_header', 'genesis_do_breadcrumbs');

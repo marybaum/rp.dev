@@ -18,7 +18,7 @@ add_action('genesis_before_loop', 'gyf_before_loop');
 
 function gyf_before_loop(){
 	echo '<div class="row">
-				<ul class="centered small-block-grid-1 medium-block-grid-2 large-block-grid-2">';
+				<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2">';
 }
 
 add_action('genesis_before_entry', 'gyf_before_entry');
