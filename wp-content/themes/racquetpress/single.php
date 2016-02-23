@@ -11,7 +11,7 @@
 add_action('genesis_before_loop', 'rpsingle_before_loop');
 
 function rpsingle_before_loop(){
-	echo '<div class="row small-12 medium-12 large-9 large-centered columns">';
+	echo '<div class="row"><div class="small-12 large-9 large-centered columns">';
 }
 
 add_action('genesis_after_loop', 'rpsingle_after_loop');
