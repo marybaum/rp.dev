@@ -1557,7 +1557,7 @@ Content
 	.homegrid-3 h2.entry-title a		{
 		background: linear-gradient(to bottom, rgba(0,0,0,0.6) 10%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		color: #fff;
-		font: normal normal .6em/.85 arquitectabook, sans-serif;
+		font: normal normal .6em/.85 arquitectalight, sans-serif;
 		left: 0;
 		padding: 0.2em;
 		position: absolute;
@@ -1566,21 +1566,13 @@ Content
 		text-shadow: 1px 1px 1px rgba(0,0,50,.75);
 	}
 
-	.featured-content p.more-from-category a  {
-		background: rgba(40, 60, 50, 0.8);
-		border: 2px solid;
-		border-radius: 2em;
-		color: #8a8;
+	.homegrid-1 p.more-from-category a,
+	.homegrid-2 p.more-from-category a,
+	.homegrid-3 p.more-from-category a   {
+		color: #fff;
 		position: absolute;
-		font-size: 80%;
-		bottom: 0;
-		left: 5%;
-		width: 45%;
-		height: 14%;
-		overflow: hidden;
-		padding: 5% 0;
-		line-height: .8;
-		text-align: center;
+		bottom: 1em;
+		left: 2%;
 	}
 
 }
@@ -1636,12 +1628,13 @@ Content
 	.homegrid-1 h2.entry-title a,
 	.homegrid-2 h2.entry-title a,
 	.homegrid-3 h2.entry-title a	{
-		font-size: 1em;
+		font-size: .8em;
 	}
 	
-	.featured-content p.more-from-category a  {
+	.homegrid-1 p.more-from-category a,
+	.homegrid-2 p.more-from-category a,
+	.homegrid-3 p.more-from-category a  {
 		font-size: 1.2em;
-		bottom: 2%;
 	}
 	
 	.single .site-inner {
@@ -1758,15 +1751,10 @@ h3.jp-relatedposts-headline {
 .footer-widgets-3 {
  	background: #344;
  	color: #aca;
+ 	padding: 2em 2%;
+ 	text-align: center;
 }
 
-.site-footer {
-  padding: 1em 2%;
-}
-
-.footer-widgets {
-  padding: 0 5%;
-}
 
 .footer-widgets-1,
 .footer-widgets-2,
