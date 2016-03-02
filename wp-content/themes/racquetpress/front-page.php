@@ -52,7 +52,7 @@ genesis_widget_area( 'home-top', array(
 
 	echo '</div></div>';
 
-echo '<div class="homegrid row small-12 medium-10 medium-centered columns clearfix">';
+echo '<div class="homegrid row small-12 medium-10 large-9 medium-centered large-centered columns">';
 
 genesis_widget_area( 'homegrid-1', array(
 		'before' => '<div class="homegrid-1 widget-area">

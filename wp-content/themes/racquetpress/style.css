@@ -548,12 +548,9 @@ Site title, header nav
   hgroup,
   main,
   .site-header,
-  .footer-widgets-1,
-  .footer-widgets-2,
-  .footer-widgets-3,
   .site-inner {
   	max-width: none;
-    padding: 0 6%;
+  	padding: 0;
     width: 100%;
   }
   
@@ -576,36 +573,43 @@ Site title, header nav
 	  background-size: cover;
 		width: 100%;
 	  z-index: 99;
-}
+	}
 
-	.site-header .title-area,
-	.site-header .widget-area	{
-		padding: 2em 0 0;
+	.site-header .title-area 	{
+		padding: 1em 0 0;
 		width: 100%;
 	}
 	
 	.site-title {
-	  background: url(images/logo-WATP-fff.svg) 50% bottom no-repeat;
+	  background: url(images/logo-WATP-fff.svg) 50% 0 no-repeat;
 	  background-size: contain;
 	  text-indent: -9999px;
 	  padding: 0;
 	}
 	
 	.site-title a {
-	  background-position: 50% 0;
-	  background-repeat: no-repeat;
-		background-size: contain;
-		display: block;
+	  display: block;
 		z-index: 175;
 	}
 	
+	.site-header .widget-area	{
+		background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(51,68,68,1) 70%);
+	  max-width: none;
+	  padding: 0;
+	  text-align: left;
+	}
+	
+	.site-header section {
+		padding: 0 8%;
+	}
+
 	h2.site-description	{
 	  text-indent: -99999px;
 	}
 	
 	.site-header .textwidget p	{
 		color: #fff;
-		font-family: 'arquitectalight', sans-serif;
+		font-family: 'arquitectabook', sans-serif;
 		line-height: 1;
 	}
 	
@@ -614,7 +618,19 @@ Site title, header nav
 		z-index: 1999;
 	}
 	
-	.site-header nav li a	{
+	.site-header nav ul li a	{
+	  background: #465;
+	  border: 2px solid;
+	  border-radius: 200%;
+	  color: #aca;
+	  float: left;
+	  font-size: 0.8em;
+	  height: 4em;
+	  line-height: .9;
+	  margin: 0 0.2em;
+	  padding: 1.4em 0;
+	  text-align: center;
+	  width: 4em;
 	  z-index: 3999;
 	}
 
@@ -622,61 +638,89 @@ Site title, header nav
 	  padding: 0 3%;
 	  z-index: -999;
 	}
-	
-	.single .site-header {
-		height: 13em;
-	}
 
+	.content-sidebar-wrap {
+	  width: 100%;
+	  padding: 0 6%;
+	}
+	
+/* 
+ Single posts, pages at minimum width. */
+
+	.single header.site-header {
+		height: 14em;
+		margin: 0;
+	}
+	
+	.single .site-header .widget-area {
+		background: none;
+		margin: 0;
+	}
+	
 	.single .site-inner {
 		background: #fff;
 		padding: 0;
 	}
 	
 	.single .entrybgd {
-		padding: 2em 0;
+		padding: 2em 5%;
 	}
 
 	.single h1.entry-title {
 	  color:  #fff;
 	  display: block;
-	  font: normal normal 3em/.9 'arquitectalight', sans-serif;
+	  font: normal normal 3em/.9 'arquitectabook', sans-serif;
 	  letter-spacing: -1px;
-	  margin: 2em 1em 1em;
+	  padding: 2em 1em 1em;
 	  text-align: left;
 	  text-shadow: 1px 1px 0 #222;
 	  z-index: 99;
+	  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 10%, rgba(0,0,0,0) 100%);
 	}
+	
+/* Intro copy that spans the columns.  */
 	.single .entry-content .intro	{
 	  -webkit-column-span: all;
 	  column-span: all;
 	  margin: 1em 0;
 	}
 
+/* Entry-content is multicolumn until you place the first image, which needs a closing div and a new row in the post editor. 
+ * When you want to pick up the columns, close the row and add another entry-content div.
+ * 
+ * All that said, the h2 is the first headline below the hero image and big damn h1. it spans the columns. */
+	
 	.single .entry-content h2	{
 	  color: #344;
 	  font-size: 2em;
 	  line-height: .95;
 	  margin: 0;
 	}
-
-	.single .entry-content h3	{
-	  color: #344;
-	  font-family: arquitectamed, sans-serif;
-	  letter-spacing: -1px;
-	  line-height: 1.1;
-	}
-
+	
+/*So does this first h3.*/
+	
 	.single .entry-content h3:nth-of-type(1)	{
 	 -webkit-column-span: all;
 	  column-span: all;
 	  margin: 0.3em 0;
 	}
+	
+/*Later h3s flow in the text. All the other headlines do too. */
+	
+	.single .entry-content h3	{
+	  color: #344;
+	  font: normal normal 1.6em/.9 arquitectamed, sans-serif;
+	  letter-spacing: -1px;
+	}
 
 	.single .entry-content h4	{
 		color: #344;
-		font-family: arquitectamed, sans-serif;
-		font-size: 1.6em;
+		font-family: arquitectaheavy, sans-serif;
+		font-size: 1.4em;
 	}
+
+/*The email signup goes at the end of every article. 
+ * So too do the sharing buttons and other Jetpack housekeeping areas.*/
 
 	.optin.widget-area	{
 	-webkit-column-span: all;
@@ -687,116 +731,11 @@ Site title, header nav
 }
 
 
-/*
-Structure and Layout
--------------------------------------------------------------------------- */
-
-    header.site-header	{
-  	height: 14em;
-  }
-
-  .site-title {
-	  height: 1.5em;
-	  text-indent: -9999px;
-	}
-
-	.site-header .widget-area	{
-	  max-width: none;
-	  padding: 0;
-	  text-align: left;
-	}
-
-	.site-header .textwidget	{
-		margin: 0 0 1em;
-	}
-
-	.site-header .textwidget p	{
-		color: #fff;
-		font-size: 94%;
-		line-height: 1;
-	}
-
-	nav.nav-primary ul	{
-		padding: 0;
-		width: 100%;
-	}
-
-	.site-header nav ul li a	{
-	  background: #465;
-	  border: 2px solid;
-	  border-radius: 200%;
-	  color: #aca;
-	  float: left;
-	  font-size: 0.8em;
-	  height: 3.75em;
-	  line-height: .9;
-	  margin: 0 .3em .3em 0;
-	  padding: 1.3em 0;
-	  text-align: center;
-	  width: 3.75em;
-	}
-	
-	.content-sidebar-wrap {
-	  width: 100%;
-	  float: none;
-	  margin: 2em auto 0;
-	  padding: 2em .5em 0 0;
-	}
-
-
-}
-
-/*@media all and (min-width: 27em)	{
-
-	  header.site-header	{
-  	height: 45vh;
-  }
-
-  .site-title {
-	  height: 1.5em;
-	  text-indent: -9999px;
-	}
-
-	.site-header .widget-area	{
-	  max-width: none;
-	  padding: 0.25em 0 0 8%;
-	  text-align: left;
-	}
-
-	.site-header .textwidget	{
-		margin: 0 0 1em;
-	}
-
-	.site-header .textwidget p	{
-		color: #fff;
-		font-size: 100%;
-		line-height: 1;
-	}
-
-	.site-header nav ul	{
-		margin: 0 auto;
-		text-align: center;
-	}
-
-	.site-header nav ul li a	{
-	  background: #465;
-	  border: 2px solid;
-	  border-radius: 200%;
-	  color: #aca;
-	  float: left;
-	  font-size: .8rem;
-	  height: 3.4rem;
-	  line-height: .9;
-	  margin: 0.5em 1.5em .5em 0;
-	  padding: 1.2rem 0;
-	  width: 3.4rem;
-	}
-
-
-
-}*/
-
 @media all and (min-width: 23em)	{
+	
+	/*These are NOT what we mean by CSS columns. 
+	 I hardly use these, am tempted to take them out. 
+	 But occasionally they're good for a hack in bigger views.*/
 
 	 .five-sixths,
   .four-sixths,
@@ -813,19 +752,8 @@ Structure and Layout
     width: 100%;
   }
 
-  .content,
- .footer-widgets-1,
-  .footer-widgets-2,
-  .footer-widgets-3,
-	.wrap {
-    padding: .5em;
-    width: 100%;
-  }
-
-  header.site-header	{
-	  height: 13em;
-	  margin-bottom: 1.6em;
-		padding: 0;
+ header.site-header	{
+	  padding: 0;
 		text-align: left;
   }
 
@@ -834,16 +762,9 @@ Structure and Layout
 	  text-indent: -9999px;
 	  margin: 0 0 0.1em;
 	}
-
-  .site-header .widget-area	{
-		margin: 0 auto;
-		width: 80%;
-	}
-
-	.site-header .textwidget p	{
-		color: #fff;
-		font-size: 97%;
-		line-height: 1;
+	
+	.site-header section {
+		padding: 0 11%;
 	}
 
 	.site-header nav ul	{
@@ -863,7 +784,8 @@ Structure and Layout
 @media all and (min-width: 40em) {
 
   header.site-header	{
-  	height: 14em;
+  	height: 13em;
+  	margin: .1em 0 1.4em;
   }
   
   .site-title{
@@ -871,13 +793,14 @@ Structure and Layout
   }
 
   .site-header .widget-area	{
+  	background: none;
   	margin: 0 auto;
 	 	text-align: center;
 	 	max-width: 90em;
 	}
 
 	.site-header .textwidget		{
-		margin: .5em auto 2em;
+		margin: .5em auto;
 	}
 
 	.site-header nav ul	{
@@ -901,6 +824,7 @@ Structure and Layout
   }
 
   .content-sidebar-wrap	{
+  	margin: 0 auto;
   	padding: 0;
   }
 
@@ -909,6 +833,7 @@ Structure and Layout
 @media all and (min-width: 80em) {
 
   header.site-header {
+  	height: 15em;
     margin: 0 0 3em;
     max-width: none;
     padding: 0;
@@ -921,12 +846,21 @@ Structure and Layout
 	}
 
 	.site-title {
-	  margin: .2em auto 0;
+		height: 2em;
+	  margin: 0.3em auto 0;
 	  text-indent: -9999px;
+	}
+	
+	.site-header .widget-area {
+		background: none;
 	}
 
 	.site-header .textwidget p	{
 		font-size: 120%;
+	}
+	
+	.site-header nav ul {
+		margin: 1em auto;
 	}
 
 }
@@ -1061,10 +995,6 @@ ul.genesis-nav-menu li a {
 	  text-shadow: none;
 	}
 	
-	.archive header.site-header {
-		margin: 0 0 3em;
-	}
-	
 	.archive .site-inner {
 		padding: 0 2%;
 	}
@@ -1096,22 +1026,21 @@ ul.genesis-nav-menu li a {
 	
 	.archive li.post,
 	.archive .entry-content img	{
-		margin: -2.4em 0;
+		margin: 0;
 		padding: 0;
 		position: relative;
 	}
   
  .archive .entry-title a {
- 	  background: linear-gradient(
-  	  	to bottom, rgba(0,0,0,0) 00%,rgba(0,0,0,0.6) 100%);/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
- 	  color: #fff;
- 	  font-size: 0.4em;
- 	  position: absolute;
- 	  height: 2em;
- 	  bottom: 3.75em;
- 	  left: 0;
-	  padding: 0 0.25em;
-	  right: 0;
+		background: linear-gradient(to bottom, rgba(0,0,0,0.6) 10%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		color: #fff;
+		font: normal normal .6em/.85 arquitectabook, sans-serif;
+		left: 0;
+		padding: 0.2em;
+		position: absolute;
+		right: 0;
+		top: 0;
+		text-shadow: 1px 1px 1px rgba(0,0,50,.75);
  }
 		
 	.entry-content,
@@ -1547,8 +1476,8 @@ Content
 
 @media all and (min-width: 0)	{
 
-	.home .columns	{
-		margin-top: 1em;
+	.home .columns,
+	.archive .columns	{
 		padding: 0;
 	}
 
@@ -1557,7 +1486,7 @@ Content
 	.homegrid-3 h2.entry-title a		{
 		background: linear-gradient(to bottom, rgba(0,0,0,0.6) 10%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		color: #fff;
-		font: normal normal .6em/.85 arquitectalight, sans-serif;
+		font: normal normal .6em/.85 arquitectabook, sans-serif;
 		left: 0;
 		padding: 0.2em;
 		position: absolute;
@@ -1596,7 +1525,8 @@ Content
 	
 	.homegrid-1 h2.entry-title a,
 	.homegrid-2 h2.entry-title a,
-	.homegrid-3 h2.entry-title a		{
+	.homegrid-3 h2.entry-title a, 
+	.archive	.entry-title a	{
 		background: linear-gradient(to bottom, rgba(0,0,0,0.5) 15%,rgba(0,0,0,0) 100%);/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		font: normal normal 0.6em/.85 arquitectabook, sans-serif;
 		padding: 0.3em;
@@ -1605,10 +1535,6 @@ Content
 	.home .content {
 		margin: 0;
 		padding: 0;
-	}
-	
-	.featured-content p.more-from-category a {
-		bottom: 6%;
 	}
 
 }
@@ -1661,6 +1587,7 @@ Content
 	  display: block;
 	  font: normal normal 6em/.9 'arquitectalight', sans-serif;
 	  letter-spacing: -4px;
+	  padding: 15vh 15%;
 	 }
 
   .single h3  {

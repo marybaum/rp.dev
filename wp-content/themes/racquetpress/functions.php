@@ -29,6 +29,9 @@ function sp_post_info_filter($post_info) {
     return $post_info;
 }
 
+//* Force full-width-content layout setting
+add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
+
 //* Reposition the breadcrumbs
 remove_action('genesis_before_loop', 'genesis_do_breadcrumbs');
 add_action('genesis_after_header', 'genesis_do_breadcrumbs');
